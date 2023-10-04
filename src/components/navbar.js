@@ -99,22 +99,22 @@ const Navbar = () => {
                     Home
                   </li>
                 </Link>
-                <Link to="/product">
+                <Link to="/personal">
                   <li className="cursor-pointer   hover:text-[#1b599b] hover:border-b hover:border-b-lg hover:border-b-[#124072]">
                     Personal
                   </li>
                 </Link>
-                <Link to="/allblog">
+                <Link to="/product">
                   <li className="cursor-pointer   hover:text-[#1b599b] hover:border-b hover:border-b-lg hover:border-b-[#124072]">
                     Products
                   </li>
                 </Link>
-                <Link to="/project">
+                <Link to="/company">
                   <li className="cursor-pointer   hover:text-[#1b599b] hover:border-b hover:border-b-lg hover:border-b-[#124072]">
                     Company
                   </li>
                 </Link>
-                <Link to="/service">
+                <Link to="/">
                   <li className="cursor-pointer   hover:text-[#1b599b] hover:border-b hover:border-b-lg hover:border-b-[#124072]">
                     Business
                   </li>
