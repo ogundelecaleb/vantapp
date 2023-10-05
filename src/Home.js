@@ -130,13 +130,13 @@ const Home = () => {
         </div>
 
         <div className="w-full md:w-[50%] md:pl-[20px] lg:pl-[40px]">
-          <ScrollAnimation
+          {/* <ScrollAnimation
             animateIn="animate__fadeInRight"
-            animateOut="animate__fadeOutRight"
-            duration={2}
-          >
+            // animateOut="animate__fadeOutRight"
+            duration={1}
+          > */}
             <div className="flex items-center gap-2 mb-[22px]">
-              <p className="text-[#3B6896] font-semibold ">OUR SAVING GOALS</p>{" "}
+              <p className="text-[#3B6896] animate__fadeInUp  animate__animated animate__slow animate__animated  font-semibold ">OUR SAVING GOALS</p>{" "}
               <img src="./image/moneybag.png" alt="" />
             </div>
             <h2 className="text-[20px] md:text-[28px] lg:text-[40px] md:mb-[28px] mb-[16px] font-medium">
@@ -168,7 +168,7 @@ const Home = () => {
             <button className="flex items-center gap-2 text-[#3B6896]">
               <p>Learn More</p> <img src="./image/arrowright.png" alt="" />
             </button>
-          </ScrollAnimation>
+          {/* </ScrollAnimation> */}
         </div>
       </section>
 
@@ -655,7 +655,7 @@ const Home = () => {
         </div>
       </section>
       <section className="px-[16px] md:px-[60px]  lg:px-[120px] mb-[60px] md:mb-[80px] lg:mb-[120px] ">
-        <h2 className=" md:w-[50%] text-[20px] md:text-[28px] lg:text-[40px] mb-[16px] md:mb-[36px] lg:mb-[56px] font-medium max-w-[50%] ">
+        <h2 className="w-full md:w-[50%] text-[20px] md:text-[28px] lg:text-[40px] mb-[16px] md:mb-[36px] lg:mb-[56px] font-medium max-w-[50%] ">
           Frequently asked questions (FAQs)
         </h2>
         <div>

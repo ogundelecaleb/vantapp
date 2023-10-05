@@ -9,7 +9,7 @@ const Product = () => {
     <div>
       <Navbar />
       <section className="px-[16px] md:px-[60px] md:gap-4 lg:px-[120px] mt-[80px] relative">
-        <h2 className="animate__lightSpeedInLeft animate__slow animate__animated text-[24px md:text-[42px] lg:text-[80px] text-black text-center font-bold max-w-[996px] mx-auto">
+      <h2 className="animate__lightSpeedInLeft animate__slow animate__animated text-[40px] md:text-[56px] lg:text-[80px] text-black text-center font-bold max-w-[996px] mx-auto">
           Unlock your Financial Potential with{" "}
           <span className="text-[#3B6896]">Vant</span>
         </h2>

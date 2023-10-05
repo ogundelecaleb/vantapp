@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { AiOutlineClose } from "react-icons/ai";
 import { motion as m } from "framer-motion";
@@ -7,6 +7,7 @@ import { motion as m } from "framer-motion";
 const Navbar = () => {
   const [toggle, setToggle] = useState(true);
   const [showMenu, setShowMenu] = useState(false);
+  const location = useLocation();
 
   const handleToggle = () => {
     setToggle(!toggle);
@@ -25,19 +26,24 @@ const Navbar = () => {
           <div className="hidden md:block">
             <ul className="text-base flex md:gap-[28px] lg:gap-[38px] items-center text-[#989898] px-[38px] py-[18px] rounded-[40px] bg-[#FAFAFA]">
               <Link to="/personal">
-                <li>Personal</li>
+                <li className={`${location.pathname === "/personal"
+            ? "text-blue-500": ""}`}>Personal</li>
               </Link>
               <Link to="/product">
-                <li>Products</li>
+                <li className={`${location.pathname === "/product"
+            ? "text-blue-500": ""}`}>Products</li>
               </Link>
               <Link to="/company">
-                <li>Company</li>
+                <li className={`${location.pathname === "/company"
+            ? "text-blue-500": ""}`}>Company</li>
               </Link>
               <Link to="">
-                <li>Developers</li>
+                <li className={`${location.pathname === "/developer"
+            ? "text-blue-500": ""}`}>Developers</li>
               </Link>
               <Link to="">
-                <li>Business</li>
+                <li className={`${location.pathname === "/personal"
+            ? "text-blue-500": ""}`}>Business</li>
               </Link>
             </ul>
           </div>
@@ -89,7 +95,7 @@ const Navbar = () => {
             transition={{
               duration: 1.2,
             }}
-            className=" mt-4 absolute top-[82px] flex items-center space-x-3 bg-white h-screen   lg:hidden w-full py-[30px] px-[20px] z-10"
+            className=" mt-4 absolute top-[82px] flex space-x-3 bg-white h-screen   lg:hidden w-full py-[30px] px-[20px] z-10"
           >
              
 
