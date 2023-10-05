@@ -3,10 +3,14 @@ import React from "react";
 const Footer = () => {
   return (
     <div className="px-[16px] md:px-[60px]  lg:px-[120px] ">
-      <div>
-        <img src="./image/logo.png" alt=""  className="mb-[40px] md-[60px] lg-[80px]"/>
+      <div className="pb-[40px] mb-[40px] md:pb-[56px] md:mb-[40px] border-b">
+        <img
+          src="./image/logo.png"
+          alt=""
+          className="mb-[40px] md-[60px] lg-[80px] w-[107px] lg:w-[147px] object-contain"
+        />
 
-        <div className="flex flex-wrap gap-[60px] justify-between ">
+        <div className="flex flex-wrap gap-[50px] justify-between ">
           <div>
             <h3 className="text-[18px] md:text-[20px] lg:text-[24px] font-semibold mb-[30px] md-[40px]">
               Company
@@ -32,60 +36,51 @@ const Footer = () => {
             </h3>{" "}
             <ul className="flex flex-col gap-[16px] md:gap-[24px]">
               <li className="text-[18px] md:text-[20px] lg:text-[24px] text-[#373738]">
-                About
+                Biz Accounts{" "}
               </li>
               <li className="text-[18px] md:text-[20px] lg:text-[24px] text-[#373738]">
-                Contact us
+                CAC Reg{" "}
               </li>
               <li className="text-[18px] md:text-[20px] lg:text-[24px] text-[#373738]">
-                Blog
-              </li>
-              <li className="text-[18px] md:text-[20px] lg:text-[24px] text-[#373738]">
-                FAQs
+                Mgt Tools{" "}
               </li>
             </ul>
           </div>
           <div>
             <h3 className="text-[18px] md:text-[20px] lg:text-[24px] font-semibold mb-[30px] md-[40px]">
-              Company
+              Developers{" "}
             </h3>{" "}
             <ul className="flex flex-col gap-[16px] md:gap-[24px]">
               <li className="text-[18px] md:text-[20px] lg:text-[24px] text-[#373738]">
-                About us
+                API Doc{" "}
               </li>
               <li className="text-[18px] md:text-[20px] lg:text-[24px] text-[#373738]">
-                Contact us
+                Integrations{" "}
               </li>
               <li className="text-[18px] md:text-[20px] lg:text-[24px] text-[#373738]">
-                Blog
-              </li>
-              <li className="text-[18px] md:text-[20px] lg:text-[24px] text-[#373738]">
-                FAQs
+                Status
               </li>
             </ul>
           </div>
           <div>
             <h3 className="text-[18px] md:text-[20px] lg:text-[24px] font-semibold mb-[30px] md-[40px]">
-              Company
+              Legal
             </h3>{" "}
             <ul className="flex flex-col gap-[16px] md:gap-[24px]">
               <li className="text-[18px] md:text-[20px] lg:text-[24px] text-[#373738]">
-                About us
+                Terms of Service{" "}
               </li>
               <li className="text-[18px] md:text-[20px] lg:text-[24px] text-[#373738]">
-                Contact us
+                Privacy Policy{" "}
               </li>
               <li className="text-[18px] md:text-[20px] lg:text-[24px] text-[#373738]">
-                Blog
-              </li>
-              <li className="text-[18px] md:text-[20px] lg:text-[24px] text-[#373738]">
-                FAQs
+                Security
               </li>
             </ul>
           </div>
         </div>
 
-        <p>©2023. Advant Capitol. All rights reserved</p>
+        <p className="mt-[40px]">©2023. Advant Capitol. All rights reserved</p>
       </div>
       <p>
         Advant Capitol is a financial technology company that is duly registered

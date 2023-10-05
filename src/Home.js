@@ -32,8 +32,8 @@ const Home = () => {
             <p>Announcing our new website</p>
           </button>
         </div>
-       
-        <h2 className="animate__lightSpeedInLeft animate__slow animate__animated text-[24px md:text-[42px] lg:text-[80px] text-black text-center font-bold max-w-[996px] mx-auto">
+
+        <h2 className="animate__lightSpeedInLeft animate__slow animate__animated text-[40px] md:text-[56px] lg:text-[80px] text-black text-center font-bold max-w-[996px] mx-auto">
           Unleash your <span className="text-[#3B6896]">savings</span> potential
         </h2>
         <p className="mt-[24px] text-[#878787] max-w-[996px] mx-auto text-center mb-[40px]">
@@ -43,10 +43,20 @@ const Home = () => {
         </p>
 
         <div className="flex justify-center items-center gap-6 mt-[40px]">
-          <img src="./image/googleplay.png" alt="google play logo"                  className="w-[50px]"
-/>
-          <img src="./image/appstore.png" alt="app store logo"                 className="w-[50px]"
- />
+          <img
+            src="./image/googleplay.png"
+            alt="google play logo"
+            className="w-[135px]
+            h-[40px] lg:w-[189px]
+            lg:h-[56px]"
+          />
+          <img
+            src="./image/appstore.png"
+            alt="app store logo"
+            className="w-[120px]
+            h-[40px] lg:w-[168px]
+            lg:h-[56px]"
+          />
         </div>
         <img
           src="./image/gridtopleft.png"
@@ -79,21 +89,21 @@ const Home = () => {
         <p className="text-center text-[#878787] mb-[40px]">
           Some of Our Partners
         </p>
-        <ScrollAnimation
-          animateIn="animate__fadeInLeft"
-          animateOut="animate__fadeOutBottomLeft"
-          duration={2}
-        >
-          <ul className="flex justify-between flex-wrap">
+        <ScrollAnimation animateIn="animate__fadeInLeft" duration={1}>
+          <ul className="flex justify-between flex-wrap gap-4">
             <li>
-              <img src="./image/aws.png" alt="aws logo" />
+              <img
+                src="./image/aws.png"
+                alt="aws logo"
+                className="h-[px] md:h-full"
+              />
             </li>
             <li>
               <img src="./image/techimpact.png" alt="techimpact logo" />
             </li>
-            <li>
+            {/* <li>
               <img src="./image/microsoft.png" alt="microsoft logo" />
-            </li>
+            </li> */}
             <li>
               <img src="./image/vfd.png" alt="vdf logo" />
             </li>
@@ -111,7 +121,11 @@ const Home = () => {
             // animateOut="animate__fadeOutBottomLeft"
             duration={1}
           >
-            <img src="/image/appwallet.png" alt="" className="mx-auto h-[350px] md:h-[440px]" />
+            <img
+              src="/image/appwallet.png"
+              alt=""
+              className="mx-auto h-[350px] md:h-[440px]"
+            />
           </ScrollAnimation>{" "}
         </div>
 
@@ -133,7 +147,7 @@ const Home = () => {
               for the future or not, it doesn’t prevent the future from
               evolving. Get intentional about your finances.
             </p>
-            <ul className="flex flex-col gap-[16px] md:gap-[32px] md:mb-[28px] mb-[16px]">
+            <ul className="hidden md:flex flex-col gap-[16px] md:gap-[32px] md:mb-[28px] mb-[16px]">
               <li className="flex items-center gap-3 text-[#5F5F60]">
                 <img src="./image/routing.png" alt="" />
                 <p>Save for vacation</p>
@@ -183,7 +197,11 @@ const Home = () => {
                 // animateOut="animate__fadeOutDown"
                 duration={1}
               >
-                <img src="/image/deluxe.png" alt="" className="mx-auto h-[350px] md:h-[440px]" />
+                <img
+                  src="/image/deluxe.png"
+                  alt=""
+                  className="mx-auto h-[350px] md:h-[440px]"
+                />
               </ScrollAnimation>
             </div>
             <h3 className="text-[18px] md:text-[24px] mb-[20px] ">
@@ -201,7 +219,11 @@ const Home = () => {
                 // animateOut="animate__fadeOutDown"
                 duration={1}
               >
-                <img src="/image/growplan.png" alt="" className="mx-auto h-[350px] md:h-[440px]" />
+                <img
+                  src="/image/growplan.png"
+                  alt=""
+                  className="mx-auto h-[350px] md:h-[440px]"
+                />
               </ScrollAnimation>
             </div>
             <h3 className="text-[18px] md:text-[24px] mb-[20px] ">
@@ -216,7 +238,11 @@ const Home = () => {
         <div className="flex items-center flex-col md:flex-row gap-[50px] mt-[20px]">
           <div className="w-full md:w-[50%]">
             <div className="bg-[#FCFCFC] pt-[80px] rounded-tl-[16px] rounded-tr-[16px]">
-              <img src="/image/surgeplan.png" alt="" className="mx-auto h-[350px] md:h-[440px]" />
+              <img
+                src="/image/surgeplan.png"
+                alt=""
+                className="mx-auto h-[350px] md:h-[440px]"
+              />
             </div>
             <h3 className="text-[18px] md:text-[24px] mb-[20px] ">
               Surge investment Plan{" "}
@@ -228,7 +254,11 @@ const Home = () => {
           </div>
           <div className="w-full md:w-[50%]">
             <div className="bg-[#FCFCFC] pt-[80px] rounded-tl-[16px] rounded-tr-[16px]">
-              <img src="/image/hni.png" alt="" className="mx-auto h-[350px] md:h-[440px]" />
+              <img
+                src="/image/hni.png"
+                alt=""
+                className="mx-auto h-[350px] md:h-[440px]"
+              />
             </div>
             <h3 className="text-[18px] md:text-[24px] mb-[20px] ">
               HNI investment Plan
@@ -248,7 +278,7 @@ const Home = () => {
         </div>
       </section>
 
-      <section  className="px-[16px] md:px-[60px]  lg:px-[120px]">
+      <section className="px-[16px] md:px-[60px]  lg:px-[120px] mb-[60px] md:mb-[100px] lg:mb-[120px]">
         <div className="text-[20px] md:text-[28px] lg:text-[40px] md:mb-[80px] mb-[36px] font-medium flex justify-center  w-full ">
           <p>HOW it works</p> <img src="./image/fire.png" alt="fire" />
         </div>
@@ -256,10 +286,14 @@ const Home = () => {
         <div className="flex items-center flex-col md:flex-row gap-[50px] mt-[20px]">
           <div className="w-full md:w-[45%]">
             <div className="bg-[#FCFCFC] pb-[80px] rounded-bl-[16px] rounded-br-[16px]">
-              <img src="/image/planlist.png" alt="" className="mx-auto h-[350px] md:h-[440px]" />
+              <img
+                src="/image/planlist.png"
+                alt=""
+                className="mx-auto h-[350px] md:h-[440px]"
+              />
             </div>
           </div>
-          <div className="relative flex flex-row md:flex-col items-center gap-3 w-full md:w-[10%] h-full">
+          <div className="relative hidden lg:flex flex-row md:flex-col items-center gap-3 w-full md:w-[10%] h-full">
             {" "}
             <div className=" h-[45px] w-[45px] flex  text-lg rounded-full text-white bg-[#7C9AB9] text-center">
               <p className="my-auto mx-auto"> 1</p>{" "}
@@ -300,7 +334,7 @@ const Home = () => {
             </p>
           </div>
         </div>
-        <div className="flex items-center flex-col md:flex-row gap-[50px] mt-[20px]">
+        <div className="flex items-center flex-col-reverse md:flex-row gap-[50px] mt-[20px]">
           <div className="w-full md:w-[45%]">
             <h3 className="text-[20px] md:text-[32px] mb-[48px] font-semibold ">
               Proceed to top-up.{" "}
@@ -314,7 +348,7 @@ const Home = () => {
               your linked debit card with vant. Shhhh! So simple!
             </p>
           </div>
-          <div className="relative flex flex-row md:flex-col items-center gap-3 w-full md:w-[10%] h-full">
+          <div className="relative hidden lg:flex flex-row md:flex-col items-center gap-3 w-full md:w-[10%] h-full">
             {" "}
             <div className=" h-[45px] w-[45px] flex  text-lg rounded-full text-white bg-[#7C9AB9] text-center">
               <p className="my-auto mx-auto"> 2</p>{" "}
@@ -343,17 +377,25 @@ const Home = () => {
           </div>
           <div className="w-full md:w-[45%]">
             <div className="bg-[#FCFCFC] pb-[80px] rounded-bl-[16px] rounded-br-[16px]">
-              <img src="/image/planlist.png" alt="" className="mx-auto h-[350px] md:h-[440px]"/>
+              <img
+                src="/image/topup.png"
+                alt=""
+                className="mx-auto h-[350px] md:h-[440px]"
+              />
             </div>
           </div>
         </div>
         <div className="flex items-center flex-col md:flex-row gap-[50px] mt-[20px]">
           <div className="w-full md:w-[45%]">
             <div className="bg-[#FCFCFC] pb-[80px] rounded-bl-[16px] rounded-br-[16px]">
-              <img src="/image/payment.png" alt="" className="mx-auto h-[350px] md:h-[440px]" />
+              <img
+                src="/image/payment.png"
+                alt=""
+                className="mx-auto h-[350px] md:h-[440px]"
+              />
             </div>
           </div>
-          <div className="relative flex flex-row md:flex-col items-center gap-3 w-full md:w-[10%] h-full">
+          <div className="relative hidden lg:flex flex-row md:flex-col items-center gap-3 w-full md:w-[10%] h-full">
             {" "}
             <div className=" h-[45px] w-[45px] flex  text-lg rounded-full text-white bg-[#7C9AB9] text-center">
               <p className="my-auto mx-auto"> 3</p>{" "}
@@ -395,7 +437,7 @@ const Home = () => {
           </div>
         </div>
       </section>
-      <section className="px-[16px] md:px-[60px]  lg:px-[120px]">
+      <section className="px-[16px] md:px-[60px]  lg:px-[120px] mb-[60px] md:mb-[100px] lg:mb-[120px]">
         <div className="w-full md:w-[50%]">
           <h3 className="text-[20px] md:text-[28px] lg:text-[40px] md:mb-[56px] mb-[26px] font-medium ">
             And there is even more… Yeah, not kidding.
@@ -409,7 +451,7 @@ const Home = () => {
               alt=""
             />
             <div className="lg:p-[42px] md:p-[24px] p-[12px] bg-[#FCFCFC]">
-              <div className="flex items-center mb-[16px] md:mb-[24px]">
+              <div className="flex flex-col lg:flex-row  gap-3 items-center mb-[16px] md:mb-[24px]">
                 <h3 className="md:text-[24px] text-[18px] font-medium">
                   Mini-Health Plans
                 </h3>
@@ -435,7 +477,7 @@ const Home = () => {
               alt=""
             />
             <div className="lg:p-[42px] md:p-[24px] p-[12px] bg-[#FCFCFC]">
-              <div className="flex items-center mb-[16px] md:mb-[24px]">
+              <div className="flex flex-col lg:flex-row  gap-3 items-center mb-[16px] md:mb-[24px]">
                 <h3 className="md:text-[24px] text-[18px] font-medium">
                   Vant SNBL (Save Now Buy Later)
                 </h3>
@@ -499,8 +541,13 @@ const Home = () => {
           </button>
         </div>
       </section>
-      <section className="px-[16px] md:px-[60px]  lg:px-[120px] mb-[60px] md:mb-[80px] lg:mb-[120px] ">
+      <section className="relative px-[16px] md:px-[60px]  lg:px-[120px] mb-[60px] md:mb-[80px] lg:mb-[120px] ">
         <div className="relative py-[32px] md:py-[48px] lg:py-[64px] community bg-no-repeat min-h-[320px] md:min-h-[480px] bg-cover">
+          <img
+            src="/image/solidbg.png"
+            alt=""
+            className="absolute top-0 left-0 object-cover w-full h-[250px] lg:h-full -z-10 rounded-lg"
+          />
           <h3 className="text-[20px] md:text-[28px] lg:text-[40px] mb-[16px] font-medium text-center  ">
             Join our <span className="text-[#3B6896]">Vant</span> community
           </h3>
@@ -516,42 +563,42 @@ const Home = () => {
           <img
             src="./image/OneEyed.png"
             alt=""
-            className="top-[60%] left-[10%]  absolute hidden md:flex"
+            className="hidden lg:block top-[60%] left-[10%]  absolute "
           />
           <img
             src="./image/purplearrow.png"
             alt=""
-            className="top-[55%] left-[50%] absolute  h-[30px] md:h-[45px] lg:h-[65px]"
+            className="hidden lg:block top-[55%] left-[50%] absolute  h-[30px] md:h-[45px] lg:h-[65px]"
           />
           <img
             src="./image/happyemogi.png"
             alt=""
-            className="top-[60%] left-[25%]  absolute h-[50px] md:h-[60px] lg:h-[100px]"
+            className="hidden lg:block top-[60%] left-[25%]  absolute h-[50px] md:h-[60px] lg:h-[100px]"
           />
           <img
             src="./image/face.png"
             alt=""
-            className="top-[32px] md:top-[64px] left-[30px] md:left-[48px] lg:left-[96px] absolute h-[40px] md:h-[50px] lg:h-[88px]"
+            className="hidden lg:block top-[32px] md:top-[64px] left-[30px] md:left-[48px] lg:left-[96px] absolute h-[40px] md:h-[50px] lg:h-[88px]"
           />
           <img
             src="./image/orangearrow.png"
             alt=""
-            className="top-[40%] left-[10%]  absolute h-[45px] md:h-[45px] lg:h-[65px]"
+            className="hidden lg:block top-[40%] left-[10%]  absolute h-[45px] md:h-[45px] lg:h-[65px]"
           />
           <img
             src="./image/manface.png"
             alt=""
-            className="top-[70%] left-[50%]  absolute h-[45px] md:h-[45px] lg:h-[65px]"
+            className="hidden lg:block top-[70%] left-[50%]  absolute h-[45px] md:h-[45px] lg:h-[65px]"
           />
           <img
             src="./image/babyavatar.png"
             alt=""
-            className="top-[60%] right-[25%]  absolute hidden md:flex"
+            className="hidden lg:block top-[60%] right-[25%]  absolute hidden md:flex"
           />
           <img
             src="./image/lollipop.png"
             alt=""
-            className="top-[50%] right-[10%]  absolute h-[50px]  md:h-[70px] lg:h-[96px]"
+            className="hidden lg:block top-[50%] right-[10%]  absolute h-[50px]  md:h-[70px] lg:h-[96px]"
           />
           <img
             src="./image/lady.png"
@@ -564,13 +611,16 @@ const Home = () => {
         <h3 className="text-[20px] md:text-[28px] lg:text-[40px] mb-[16px] font-medium text-center max-w-[759px] mx-auto ">
           Build custom payments experiences with our structured documented APIs
         </h3>
-
-        <div className="flex flex-col md:flex-row">
+        <div className="flex lg:hidden items-center gap-2 my-[32px] ">
+          <h4 className="text-[#3B6896] text-base">VANT FOR DEVELOPERS</h4>
+          <img src="./image/spanner.png" alt="spanner" />
+        </div>
+        <div className="flex flex-col md:flex-row gap-6">
           <div className="w-full md:w-[60%] bg-[#FCFCFC] flex justify-center py-[32px]">
             <img src="./image/codesnippet.png" alt="code snippet" />
           </div>
           <div className="w-full md:w-[35%] md:pl-[56px] md:pt-[56px]">
-            <div className="flex items-center gap-2 mb-[32px] md:mb-[32px]">
+            <div className="hidden md:flex items-center gap-2 mb-[32px] md:mb-[32px]">
               <h4 className="text-[#3B6896] text-base">VANT FOR DEVELOPERS</h4>
               <img src="./image/spanner.png" alt="spanner" />
             </div>
@@ -610,7 +660,7 @@ const Home = () => {
         </h2>
         <div>
           <div className="grid grid-cols-1 gap-[20px] md:grid-cols-2 mx-[24px] md:mx-[40px] lg:mx-[80px] mb-[24px] md:mb-[34px]">
-            <div className="mb-[24px] md:pb-[40px] border-b">
+            <div className="mb-[24px] pb-[40px] border-b">
               <h3 className="text-[18px] md:text-[20px] lg:text-[24px] mb-4">
                 What is Vant?
               </h3>
@@ -619,16 +669,16 @@ const Home = () => {
                 and small businesses.
               </p>
             </div>
-            <div>
+            <div className="mb-[24px] pb-[40px] border-b">
               <h3 className="text-[18px] md:text-[20px] lg:text-[24px] mb-4">
                 Is my personal information safe with Vant?
               </h3>
-              <p className="text-lg md:text-base text-[#5F5F60] mb-[24px] md:pb-[40px] border-b">
+              <p className="text-lg md:text-base text-[#5F5F60] ">
                 At Vant, your data privacy 🔏 is important to us. We protect
                 your data bank-level encryption.
               </p>
             </div>
-            <div className="mb-[24px] md:pb-[40px] border-b">
+            <div className="mb-[24px] pb-[40px] border-b">
               <h3 className="text-[18px] md:text-[20px] lg:text-[24px] mb-4">
                 How does Vant work?
               </h3>
@@ -638,7 +688,7 @@ const Home = () => {
                 financial management value added services.
               </p>
             </div>
-            <div className="mb-[24px] md:pb-[40px] border-b">
+            <div className="mb-[24px] pb-[40px] border-b">
               <h3 className="text-[18px] md:text-[20px] lg:text-[24px] mb-4">
                 How does Vant help me save money?
               </h3>
@@ -656,25 +706,29 @@ const Home = () => {
         </div>
       </section>
       <section className="px-[16px] md:px-[60px]  lg:px-[120px] mb-[60px] md:mb-[80px] lg:mb-[120px]">
-        <div className="flex pt-[40px] md:pt-[78px] bg-[#FCFCFC] px-[30px] md:px-[50px] lg:px-[80px] gap-[60px] flex-row items-center">
+        <div className="flex py-[40px] md:py-[78px] bg-[#FCFCFC] px-[30px] md:px-[50px] lg:px-[80px] gap-[60px] flex-row items-center">
           <div className="hidden md:flex w-[40%]">
             <img src="./image/appwallet.png" alt="" className="mx-auto" />
           </div>
           <div className="w-full md:w-[60%]">
-            <h3 className="  text-[20px] md:text-[28px] lg:text-[40px] mb-[16px] md:mb-[36px] lg:mb-[56px] font-medium">
+            <h3 className="  text-[24px] md:text-[28px] lg:text-[40px] mb-[16px] md:mb-[36px] lg:mb-[56px] font-medium text-center">
               Download Vant app today and start your journey towards financial
               freedom.
             </h3>
-            <div className="flex gap-4 md:gap-6">
+            <div className="flex justify-center items-center gap-6 mt-[40px]">
               <img
                 src="./image/googleplay.png"
-                alt="Google pLay"
-                className="w-[40px]"
+                alt="google play logo"
+                className="w-[135px]
+            h-[40px] lg:w-[189px]
+            lg:h-[56px]"
               />
               <img
                 src="./image/appstore.png"
-                alt="app store"
-                className="w-[40px]"
+                alt="app store logo"
+                className="w-[120px]
+            h-[40px] lg:w-[168px]
+            lg:h-[56px]"
               />
             </div>
           </div>
