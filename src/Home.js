@@ -8,7 +8,7 @@ import { motion, useScroll } from "framer-motion";
 const Home = () => {
   const ref1 = useRef(null);
   const { scrollYProgress } = useScroll({
-    target: ref1,
+    target: [ref1],
     offset: ["end end", "start start"],
   });
   // const ref2 = useRef(null);
@@ -353,7 +353,7 @@ const Home = () => {
             <div className=" h-[45px] w-[45px] flex  text-lg rounded-full text-white bg-[#7C9AB9] text-center">
               <p className="my-auto mx-auto"> 2</p>{" "}
             </div>
-            <div ref1={ref1} className="absolute">
+            <div ref={ref1} className="absolute">
               <figure className="progress">
                 <svg id="progress" width="75" height="75" viewBox="0 0 100 100">
                   <circle
@@ -400,7 +400,7 @@ const Home = () => {
             <div className=" h-[45px] w-[45px] flex  text-lg rounded-full text-white bg-[#7C9AB9] text-center">
               <p className="my-auto mx-auto"> 3</p>{" "}
             </div>
-            <div ref1={ref1} className="absolute">
+            <div ref={ref1} className="absolute">
               <figure className="progress">
                 <svg id="progress" width="75" height="75" viewBox="0 0 100 100">
                   <circle
