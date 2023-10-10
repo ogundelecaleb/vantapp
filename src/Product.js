@@ -8,8 +8,8 @@ const Product = () => {
   return (
     <div>
       <Navbar />
-      <section className="px-[16px] md:px-[60px] md:gap-4 lg:px-[120px] mt-[80px] relative">
-      <h2 className="animate__lightSpeedInLeft animate__slow animate__animated text-[40px] md:text-[56px] lg:text-[80px] text-black text-center font-bold max-w-[996px] mx-auto">
+      <section className="px-[16px] md:px-[60px] md:gap-4 lg:px-[120px] mt-[80px] relative mb-[60px] md:mb-[80px] lg:mb-[120px]">
+        <h2 className="animate__lightSpeedInLeft animate__slow animate__animated text-[40px] md:text-[56px] lg:text-[80px] text-black text-center font-bold max-w-[996px] mx-auto">
           Unlock your Financial Potential with{" "}
           <span className="text-[#3B6896]">Vant</span>
         </h2>
@@ -21,29 +21,38 @@ const Product = () => {
           <p className="text-center text-[#878787] mb-[40px]">
             Some of Our Partners
           </p>
-          <ScrollAnimation
-            animateIn="animate__fadeInLeft"
-            animateOut="animate__fadeOutBottomLeft"
-            duration={2}
-          >
-            <ul className="flex justify-between flex-wrap">
-              <li>
-                <img src="./image/aws.png" alt="aws logo" />
-              </li>
-              <li>
-                <img src="./image/techimpact.png" alt="techimpact logo" />
-              </li>
-              <li>
-                <img src="./image/microsoft.png" alt="microsoft logo" />
-              </li>
-              <li>
-                <img src="./image/vfd.png" alt="vdf logo" />
-              </li>
-              <li>
-                <img src="./image/providus.png" alt="providus logo" />
-              </li>
-            </ul>
-          </ScrollAnimation>
+
+          <ul className="flex justify-between flex-wrap gap-4">
+            <li>
+              <img
+                src="./image/aws.png"
+                alt="aws logo"
+                className="h-[20px] md:h-full"
+              />
+            </li>
+            <li>
+              <img
+                src="./image/techimpact.png"
+                alt="techimpact logo"
+                className="h-[20px] md:h-full"
+              />
+            </li>
+           
+            <li>
+              <img
+                src="./image/vfd.png"
+                alt="vdf logo"
+                className="h-[20px] md:h-full"
+              />
+            </li>
+            <li>
+              <img
+                src="./image/providus.png"
+                alt="providus logo"
+                className="h-[20px] md:h-full"
+              />
+            </li>
+          </ul>
         </section>
         <img
           src="./image/productcartoon1.png"
@@ -71,143 +80,199 @@ const Product = () => {
 
         <div className="flex items-center flex-col md:flex-row gap-[50px] ">
           <div className="w-full md:w-[50%]">
-            <div className="bg-[#FCFCFC] pt-[80px] rounded-tl-[16px] rounded-tr-[16px]">
-              <ScrollAnimation
-                animateIn="animate__fadeInUp"
-                animateOut="animate__fadeOutDown"
-                duration={2}
-              >
-                <img src="/image/deluxe.png" alt="" className="mx-auto h-[350px] md:h-[440px]"/>
-              </ScrollAnimation>
+            <div className="bg-[#f9f9f9] pt-[80px] rounded-tl-[16px] rounded-tr-[16px]">
+              <img
+                src="/image/deluxe.png"
+                alt=""
+                className="mx-auto h-[350px] md:h-[440px]"
+              />
             </div>
-            <h3 className="text-[18px] md:text-[24px] mb-[20px] ">
-              Deluxe investment Plan
-            </h3>
-            <p className="text-[#5F5F60]">
-              With the deluxe plan, you can earn up to 5% P.A with a minimum of
-              1 unit. You will have access to make withdrawals after 1 month.
-            </p>
+            <ScrollAnimation
+              animateIn="animate__fadeInUp"
+              duration={1}
+            >
+              <h3 className="text-[18px] md:text-[24px] mb-[20px] ">
+                Deluxe investment Plan
+              </h3>{" "}
+            </ScrollAnimation>
+            <ScrollAnimation
+              animateIn="animate__fadeInUp"
+              duration={1}
+            >
+              <p className="text-[#5F5F60]">
+                With the deluxe plan, you can earn up to 5% P.A with a minimum
+                of 1 unit. You will have access to make withdrawals after 1
+                month.
+              </p>
+            </ScrollAnimation>
           </div>
           <div className="w-full md:w-[50%]">
-            <div className="bg-[#FCFCFC] pt-[80px] rounded-tl-[16px] rounded-tr-[16px]">
-              <ScrollAnimation
-                animateIn="animate__fadeInUp"
-                animateOut="animate__fadeOutDown"
-                duration={2}
-              >
-                <img src="/image/growplan.png" alt="" className="mx-auto h-[350px] md:h-[440px]" />
-              </ScrollAnimation>
+            <div className="bg-[#f9f9f9] pt-[80px] rounded-tl-[16px] rounded-tr-[16px]">
+              <img
+                src="/image/growplan.png"
+                alt=""
+                className="mx-auto h-[350px] md:h-[440px]"
+              />
             </div>
-            <h3 className="text-[18px] md:text-[24px] mb-[20px] ">
-              Grow investment Plan{" "}
-            </h3>
-            <p className="text-[#5F5F60]">
-              With the grow plan, you can earn up to 10% P.A with a minimum of 3
-              unit. You will have access to make withdrawals after 3 months.
-            </p>
+            <ScrollAnimation
+              animateIn="animate__fadeInUp"
+              duration={1}
+            >
+              <h3 className="text-[18px] md:text-[24px] mb-[20px] ">
+                Grow investment Plan{" "}
+              </h3>
+            </ScrollAnimation>
+            <ScrollAnimation
+              animateIn="animate__fadeInUp"
+              duration={1}
+            >
+              <p className="text-[#5F5F60]">
+                With the grow plan, you can earn up to 10% P.A with a minimum of
+                3 unit. You will have access to make withdrawals after 3 months.
+              </p>
+            </ScrollAnimation>
           </div>
         </div>
         <div className="flex items-center flex-col md:flex-row gap-[50px] mt-[20px]">
           <div className="w-full md:w-[50%]">
-            <div className="bg-[#FCFCFC] pt-[80px] rounded-tl-[16px] rounded-tr-[16px]">
-              <img src="/image/surgeplan.png" alt="" className="mx-auto h-[350px] md:h-[440px]" />
+            <div className="bg-[#f9f9f9] pt-[80px] rounded-tl-[16px] rounded-tr-[16px]">
+              <img
+                src="/image/surgeplan.png"
+                alt=""
+                className="mx-auto h-[350px] md:h-[440px]"
+              />
             </div>
-            <h3 className="text-[18px] md:text-[24px] mb-[20px] ">
-              Surge investment Plan{" "}
-            </h3>
-            <p className="text-[#5F5F60]">
-              With the surge plan, you can earn up to 13% P.A with a minimum of
-              5 unit. You will have access to make withdrawals after 6 months.
-            </p>
+            <ScrollAnimation
+              animateIn="animate__fadeInUp"
+              duration={1}
+            >
+              <h3 className="text-[18px] md:text-[24px] mb-[20px] ">
+                Surge investment Plan{" "}
+              </h3>
+            </ScrollAnimation>
+            <ScrollAnimation
+              animateIn="animate__fadeInUp"
+              duration={1}
+            >
+              <p className="text-[#5F5F60]">
+                With the surge plan, you can earn up to 13% P.A with a minimum
+                of 5 unit. You will have access to make withdrawals after 6
+                months.
+              </p>
+            </ScrollAnimation>
           </div>
           <div className="w-full md:w-[50%]">
-            <div className="bg-[#FCFCFC] pt-[80px] rounded-tl-[16px] rounded-tr-[16px]">
-              <img src="/image/hni.png" alt="" className="mx-auto h-[350px] md:h-[440px]" />
+            <div className="bg-[#f9f9f9] pt-[80px] rounded-tl-[16px] rounded-tr-[16px]">
+              <img
+                src="/image/hni.png"
+                alt=""
+                className="mx-auto h-[350px] md:h-[440px]"
+              />
             </div>
-            <h3 className="text-[18px] md:text-[24px] mb-[20px] ">
-              HNI investment Plan
-            </h3>
-            <p className="text-[#5F5F60]">
-              With the HNI investment plan, you can customize the plan to suit
-              your finances with risk appetite most convenient to you. Sounds
-              cool, right?
-            </p>
+            <ScrollAnimation
+              animateIn="animate__fadeInUp"
+              duration={1}
+            >
+              <h3 className="text-[18px] md:text-[24px] mb-[20px] ">
+                HNI investment Plan
+              </h3>
+            </ScrollAnimation>
+            <ScrollAnimation
+              animateIn="animate__fadeInUp"
+              duration={1}
+            >
+              <p className="text-[#5F5F60]">
+                With the HNI investment plan, you can customize the plan to suit
+                your finances with risk appetite most convenient to you. Sounds
+                cool, right?
+              </p>
+            </ScrollAnimation>
           </div>
         </div>
       </section>
       <section className="px-[16px] md:px-[60px] md:gap-4 lg:px-[120px] py-[24px] flex items-center flex-col md:flex-row mb-[60px] md:mb-[100px] lg:mb-[120px]">
-        <div className="w-full md:w-[50%] bg-[#FCFCFC] pt-[80px] rounded-tl-[16px] rounded-tr-[16px]">
-          {" "}
-          <ScrollAnimation
-            animateIn="animate__fadeInLeft"
-            animateOut="animate__fadeOutBottomLeft"
-            duration={2}
-          >
-            <img src="/image/appwallet.png" alt="" className="mx-auto h-[350px] md:h-[440px]" />
-          </ScrollAnimation>{" "}
+        <div className="w-full md:w-[50%] bg-[#f9f9f9] pt-[80px] rounded-tl-[16px] rounded-tr-[16px]">
+         
+          <img
+            src="/image/payoffdebt.png"
+            alt=""
+            className="mx-auto h-[350px] md:h-[440px]"
+          />
         </div>
 
         <div className="w-full md:w-[50%] md:pl-[20px] lg:pl-[40px]">
+         
+          <div>
+            <ScrollAnimation
+              animateIn="animate__fadeInUp"
+              // animateOut="animate__fadeOutRight"
+              duration={1}
+              className="flex items-center gap-2 mb-[22px]"
+            >
+              <p className="text-[#3B6896] animate__fadeInUp  animate__animated animate__slow font-semibold ">
+                VANT PAY OFF DEBTS
+              </p>{" "}
+              <img src="./image/moneybag.png" alt="" />
+            </ScrollAnimation>
+          </div>
           <ScrollAnimation
-            animateIn="animate__fadeInRight"
-            animateOut="animate__fadeOutRight"
-            duration={2}
+            animateIn="animate__fadeInUp"
+            // animateOut="animate__fadeOutRight"
+            duration={1}
           >
-            <div className="flex items-center gap-2 mb-[22px]">
-              <p className="text-[#3B6896] font-semibold ">OUR SAVING GOALS</p>{" "}
-              <img src="./image/payoffdebt.png" alt="" />
-            </div>
-            <h2 className="text-[20px] md:text-[28px] lg:text-[40px] md:mb-[28px] mb-[16px] font-medium">
-              Do you want to save money for your future goals?
+            <h2 className="   animate__animated animate__slow animate__fadeInUp text-[20px] md:text-[28px] lg:text-[35px] md:mb-[28px] mb-[16px] tracking-tighter font-medium">
+              Improve your financial welfare by saving to clear off debts.{" "}
             </h2>
-            <p className="text-[16px] md:text-[18px]  md:mb-[28px] mb-[16px]">
-              Whether you sleep or not, the day will dawn. Whether you prepare
-              for the future or not, it doesn’t prevent the future from
-              evolving. Get intentional about your finances.
-            </p>
-            <ul className="flex flex-col gap-[16px] md:gap-[32px] md:mb-[28px] mb-[16px]">
-              <li className="flex items-center gap-3 text-[#5F5F60]">
-                <img src="./image/transaction.png" alt="" />
-                <p>Save for vacation</p>
-              </li>
-              <li className="flex items-center gap-3 text-[#5F5F60]">
-                <img src="./image/profile.png" alt="" />
-                <p>Save to pay off debt</p>
-              </li>
-              <li className="flex items-center gap-3 text-[#5F5F60]">
-                <img src="./image/card-edit.png" alt="" />
-                <p>Save for retirement</p>
-              </li>
-              <li className="flex items-center gap-3 text-[#5F5F60]">
-                <img src="./image/card.png" alt="" />
-                <p>Save for health insurance</p>
-              </li>
-            </ul>
           </ScrollAnimation>
+          <ScrollAnimation animateIn="animate__fadeInUp" duration={1}>
+            <p className="text-[16px] md:text-[18px]  md:mb-[28px] mb-[16px]">
+              This feature promotes a long-term financial health. By reducing
+              debts and building savings simultaneously, individuals can achieve
+              a more secure and stable financial future.
+            </p>
+          </ScrollAnimation>
+          <ul className="hidden md:flex flex-col gap-[16px] md:gap-[32px] md:mb-[28px] mb-[16px]">
+            <li className="flex items-center gap-3 text-[#5F5F60]">
+              <img src="./image/transaction.png" alt="" />
+              <p>Automatic transfer</p>
+            </li>
+            <li className="flex items-center gap-3 text-[#5F5F60]">
+              <img src="./image/profile.png" alt="" />
+              <p>Pay off using Vant tags</p>
+            </li>
+            <li className="flex items-center gap-3 text-[#5F5F60]">
+              <img src="./image/card-edit.png" alt="" />
+              <p>Set debt payment method</p>
+            </li>
+            <li className="flex items-center gap-3 text-[#5F5F60]">
+              <img src="./image/card.png" alt="" />
+              <p>Set savings frequency</p>
+            </li>
+          </ul>
         </div>
       </section>
-      <section className="px-[16px] md:px-[60px]  lg:px-[120px] mb-[60px] md:mb-[80px] lg:mb-[120px]">
-        <h3 className="text-[20px] md:text-[28px] lg:text-[40px] mb-[16px] font-medium text-center max-w-[759px] mx-auto ">
-          Future Investment opportunities on Vant{" "}
+      <section className="px-[16px] md:px-[60px]  lg:px-[110px] mb-[60px] md:mb-[80px] lg:mb-[120px]">
+        <h3 className="text-[20px] md:text-[28px] lg:text-[40px] mb-[16px] font-medium text-center  mx-auto md:mb-[32px] lg:mb-[64px] ">
+          Future Investment opportunities on <span className="text-[#3B6896]">Vant</span>{" "}
         </h3>
-        <div className="flex flex-col md:flex-row  gap-6">
-          <div className="w-full md:w-[50%]">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3  gap-[23px]">
+          <div className="w-full md:max-w-[385px] rounded-[16px]">
             <img
               src="./image/vantretirement.png"
-              className="w-full object-contain"
+              className="w-full object-contain rounded-tr-[16px] rounded-tl-[16px]"
               alt=""
             />
-            <div className="lg:p-[42px] md:p-[24px] p-[12px] bg-[#FCFCFC]">
-              <div className="flex items-center mb-[16px] md:mb-[24px]">
-                <h3 className="md:text-[24px] text-[18px] font-medium">
+            <div className="lg:p-[26px] md:p-[20px] p-[12px] bg-[#FCFCFC] rounded-br-[16px] rounded-bl-[16px]">
+              <div className="flex items-center gap-[12px] mb-[16px] md:mb-[24px]">
+                <h3 className="md:text-[20px] text-[16px] font-medium">
                   Vant Retirement{" "}
                 </h3>
-                <button className="bg-white px-3 py-2 rounded-xl">
+                <button className="bg-white px-3 text-[14px] py-2 rounded-xl">
                   Coming soon
                 </button>
               </div>{" "}
               <div>
-                <p>
+                <p className=" text-[14px] text-[#5F5F60]">
                   Vant is launching its mini-health plans. In partnership with
                   various health insurance comapnies, we are doing a test pilot
                   of the product.
@@ -218,23 +283,23 @@ const Product = () => {
             </div>
           </div>
 
-          <div className="w-full md:w-[50%]">
+          <div className="w-full md:max-w-[385px] rounded-[16px]">
             <img
               src="./image/vanthealth.png"
-              className="w-full object-contain"
+              className="w-full object-contain rounded-tr-[16px] rounded-tl-[16px]"
               alt=""
             />
-            <div className="lg:p-[42px] md:p-[24px] p-[12px] bg-[#FCFCFC]">
-              <div className="flex items-center mb-[16px] md:mb-[24px]">
-                <h3 className="md:text-[24px] text-[18px] font-medium">
+            <div className="lg:p-[26px] md:p-[20px] p-[12px] bg-[#FCFCFC] rounded-br-[16px] rounded-bl-[16px]">
+              <div className="flex items-center gap-[12px] mb-[16px] md:mb-[24px]">
+                <h3 className="md:text-[20px] text-[16px] font-medium">
                   Vant Health
                 </h3>
-                <button className="bg-white px-3 py-2 rounded-xl">
+                <button className="bg-white px-3 text-[14px] py-2 rounded-xl">
                   Coming soon
                 </button>
               </div>{" "}
               <div>
-                <p>
+                <p className=" text-[14px] text-[#5F5F60]">
                   Vant is launching its mini-health plans. In partnership with
                   various health insurance comapnies, we are doing a test pilot
                   of the product.
@@ -246,23 +311,23 @@ const Product = () => {
               </div>
             </div>
           </div>
-          <div className="w-full md:w-[50%]">
+          <div className="w-full md:max-w-[385px] rounded-[16px]">
             <img
               src="./image/vantsnbl.png"
-              className="w-full object-contain"
+              className="w-full object-contain rounded-tr-[16px] rounded-tl-[16px]"
               alt=""
             />
-            <div className="lg:p-[42px] md:p-[24px] p-[12px] bg-[#FCFCFC]">
-              <div className="flex items-center mb-[16px] md:mb-[24px]">
-                <h3 className="md:text-[24px] text-[18px] font-medium">
-                  Vant SNBL (Save Now Buy Later)
+            <div className="lg:p-[26px] md:p-[20px] p-[12px] bg-[#FCFCFC] rounded-br-[16px] rounded-bl-[16px]">
+              <div className="flex items-center gap-[12px] mb-[16px] md:mb-[24px]">
+                <h3 className="md:text-[20px] text-[16px] font-medium">
+                  Vant SNBL
                 </h3>
-                <button className="bg-white px-3 py-2 rounded-xl">
+                <button className="bg-white px-3 text-[14px] py-2 rounded-xl">
                   Coming soon
                 </button>
               </div>{" "}
               <div>
-                <p>
+                <p className=" text-[14px] text-[#5F5F60]">
                   Vant is launching its mini-health plans. In partnership with
                   various health insurance comapnies, we are doing a test pilot
                   of the product.
@@ -274,23 +339,23 @@ const Product = () => {
               </div>
             </div>
           </div>
-          <div className="w-full md:w-[50%]">
+          <div className="w-full md:max-w-[385px] rounded-[16px]">
             <img
               src="./image/vantcoop.png"
-              className="w-full object-contain"
+              className="w-full object-contain rounded-tr-[16px] rounded-tl-[16px]"
               alt=""
             />
-            <div className="lg:p-[42px] md:p-[24px] p-[12px] bg-[#FCFCFC]">
+            <div className="lg:p-[26px] md:p-[20px] p-[12px] bg-[#FCFCFC] rounded-br-[16px] rounded-bl-[16px]">
               <div className="flex items-center mb-[16px] md:mb-[24px]">
-                <h3 className="md:text-[24px] text-[18px] font-medium">
+                <h3 className="md:text-[20px] text-[16px] font-medium">
                   Vant For Coop
                 </h3>
-                <button className="bg-white px-3 py-2 rounded-xl">
+                <button className="bg-white px-3 text-[14px] py-2 rounded-xl">
                   Coming soon
                 </button>
               </div>{" "}
               <div>
-                <p>
+                <p className=" text-[14px] text-[#5F5F60]">
                   Vant is launching its mini-health plans. In partnership with
                   various health insurance comapnies, we are doing a test pilot
                   of the product.
@@ -302,23 +367,23 @@ const Product = () => {
               </div>
             </div>
           </div>
-          <div className="w-full md:w-[50%]">
+          <div className="w-full md:max-w-[385px] rounded-[16px]">
             <img
               src="./image/vantbusiness.png"
-              className="w-full object-contain"
+              className="w-full object-contain rounded-tr-[16px] rounded-tl-[16px]"
               alt=""
             />
-            <div className="lg:p-[42px] md:p-[24px] p-[12px] bg-[#FCFCFC]">
+            <div className="lg:p-[26px] md:p-[20px] p-[12px] bg-[#FCFCFC] rounded-br-[16px] rounded-bl-[16px]">
               <div className="flex items-center mb-[16px] md:mb-[24px]">
-                <h3 className="md:text-[24px] text-[18px] font-medium">
+                <h3 className="md:text-[20px] text-[16px] font-medium">
                   Vant for Business{" "}
                 </h3>
-                <button className="bg-white px-3 py-2 rounded-xl">
+                <button className="bg-white px-3 text-[14px] py-2 rounded-xl">
                   Coming soon
                 </button>
               </div>{" "}
               <div>
-                <p>
+                <p className=" text-[14px] text-[#5F5F60]">
                   Vant is launching its mini-health plans. In partnership with
                   various health insurance comapnies, we are doing a test pilot
                   of the product.
@@ -330,23 +395,23 @@ const Product = () => {
               </div>
             </div>
           </div>
-          <div className="w-full md:w-[50%]">
+          <div className="w-full md:max-w-[385px] rounded-[16px]">
             <img
               src="./image/vantcard.png"
-              className="w-full object-contain"
+              className="w-full object-contain rounded-tr-[16px] rounded-tl-[16px]"
               alt=""
             />
-            <div className="lg:p-[42px] md:p-[24px] p-[12px] bg-[#FCFCFC]">
+            <div className="lg:p-[26px] md:p-[20px] p-[12px] bg-[#FCFCFC] rounded-br-[16px] rounded-bl-[16px]">
               <div className="flex items-center mb-[16px] md:mb-[24px]">
-                <h3 className="md:text-[24px] text-[18px] font-medium">
+                <h3 className="md:text-[20px] text-[16px] font-medium">
                   Vant Cards{" "}
                 </h3>
-                <button className="bg-white px-3 py-2 rounded-xl">
+                <button className="bg-white px-3 text-[14px] py-2 rounded-xl">
                   Coming soon
                 </button>
               </div>{" "}
               <div>
-                <p>
+                <p className=" text-[14px] text-[#5F5F60]">
                   Vant is launching its mini-health plans. In partnership with
                   various health insurance comapnies, we are doing a test pilot
                   of the product.
@@ -361,25 +426,29 @@ const Product = () => {
         </div>
       </section>
       <section className="px-[16px] md:px-[60px]  lg:px-[120px] mb-[60px] md:mb-[80px] lg:mb-[120px]">
-        <div className="flex pt-[40px] md:pt-[78px] bg-[#FCFCFC] px-[30px] md:px-[50px] lg:px-[80px] gap-[60px] flex-row items-center">
+        <div className="flex py-[40px] md:py-[78px] bg-[#f9f9f9] px-[30px] md:px-[50px] lg:px-[80px] gap-[60px] flex-row items-center rounded-[16px]">
           <div className="hidden md:flex w-[40%]">
             <img src="./image/appwallet.png" alt="" className="mx-auto" />
           </div>
           <div className="w-full md:w-[60%]">
-            <h3 className="  text-[20px] md:text-[28px] lg:text-[40px] mb-[16px] md:mb-[36px] lg:mb-[56px] font-medium">
+            <h3 className="  text-[24px] md:text-[28px] lg:text-[40px] mb-[16px] md:mb-[36px] lg:mb-[56px] font-medium">
               Download Vant app today and start your journey towards financial
               freedom.
             </h3>
-            <div className="flex gap-4 md:gap-6">
+            <div className="flex justify-center items-center gap-6 mt-[40px]">
               <img
                 src="./image/googleplay.png"
-                alt="Google pLay"
-                className="w-[40px]"
+                alt="google play logo"
+                className="w-[135px]
+            h-[40px] lg:w-[189px]
+            lg:h-[56px]"
               />
               <img
                 src="./image/appstore.png"
-                alt="app store"
-                className="w-[40px]"
+                alt="app store logo"
+                className="w-[120px]
+            h-[40px] lg:w-[168px]
+            lg:h-[56px]"
               />
             </div>
           </div>

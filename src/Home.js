@@ -1,10 +1,9 @@
-import React, { useEffect, useRef, useState } from "react";
+import React from "react";
 import Navbar from "./components/navbar";
 import Footer from "./components/Footer";
 import ScrollAnimation from "react-animate-on-scroll";
 import "./animate.css";
 import { useInView } from "react-intersection-observer";
-import { motion, useScroll } from "framer-motion";
 
 
 const Progress =({number})=> {
@@ -25,16 +24,7 @@ const Progress =({number})=> {
 }
 
 const Home = () => {
-  // const { ref, inView } = useInView({
-  //   threshold: 0.2
-  // });
 
-  const {ref, inView} = useInView({
-    threshold: 0.2
-  });
-  
-
-  
   
 
 
@@ -45,7 +35,7 @@ const Home = () => {
 
         <div className="w-full ">
 
-          <button className=" flex items-center px-[28px] py-[8px] gap-[8px] rounded-[40px] bg-[#FAFAFA] mx-auto text-[#3B6896]">
+          <button className=" flex items-center px-[28px] py-[8px] gap-[8px] rounded-[40px] bg-[#f9f9f9] mx-auto text-[#3B6896]">
             <img src="./image/partypopper.png" alt="party popper" />
             <p>Announcing our new website</p>
           </button>
@@ -144,7 +134,7 @@ const Home = () => {
         {/* </ScrollAnimation> */}
       </section>
       <section className="px-[16px] md:px-[60px] gap-[40px] md:gap-4 lg:px-[120px] py-[24px] flex items-center flex-col md:flex-row mb-[60px] md:mb-[100px] lg:mb-[120px]">
-        <div className="w-full md:w-[50%] bg-[#FCFCFC] pt-[80px] rounded-tl-[16px] rounded-tr-[16px]">
+        <div className="w-full md:w-[50%] bg-[#f9f9f9] pt-[80px] rounded-tl-[16px] rounded-tr-[16px]">
           {" "}
           {/* <ScrollAnimation
             animateIn="animate__fadeInLeft"
@@ -189,7 +179,6 @@ const Home = () => {
           </ScrollAnimation>
           <ScrollAnimation
             animateIn="animate__fadeInUp"
-            // animateOut="animate__fadeOutRight"
             duration={1}
           >
             <p className="text-[16px] md:text-[18px]  md:mb-[28px] mb-[16px]">
@@ -254,18 +243,13 @@ const Home = () => {
 
         <div className="flex items-center flex-col md:flex-row gap-[50px] ">
           <div className="w-full md:w-[50%]">
-            <div className="bg-[#FCFCFC] pt-[80px] rounded-tl-[16px] rounded-tr-[16px]">
-              {/* <ScrollAnimation
-                animateIn="animate__fadeInUp"
-                // animateOut="animate__fadeOutDown"
-                duration={1}
-              > */}
+            <div className="bg-[#f9f9f9] pt-[80px] rounded-tl-[16px] rounded-tr-[16px]">
+              
               <img
                 src="/image/deluxe.png"
                 alt=""
                 className="mx-auto h-[350px] md:h-[440px]"
               />
-              {/* </ScrollAnimation> */}
             </div>
             <ScrollAnimation
               animateIn="animate__fadeInUp"
@@ -289,12 +273,8 @@ const Home = () => {
             </ScrollAnimation>
           </div>
           <div className="w-full md:w-[50%]">
-            <div className="bg-[#FCFCFC] pt-[80px] rounded-tl-[16px] rounded-tr-[16px]">
-              {/* <ScrollAnimation
-                animateIn="animate__fadeInUp"
-                // animateOut="animate__fadeOutDown"
-                duration={1}
-              > */}
+            <div className="bg-[#f9f9f9] pt-[80px] rounded-tl-[16px] rounded-tr-[16px]">
+              
               <img
                 src="/image/growplan.png"
                 alt=""
@@ -325,7 +305,7 @@ const Home = () => {
         </div>
         <div className="flex items-center flex-col md:flex-row gap-[50px] mt-[20px]">
           <div className="w-full md:w-[50%]">
-            <div className="bg-[#FCFCFC] pt-[80px] rounded-tl-[16px] rounded-tr-[16px]">
+            <div className="bg-[#f9f9f9] pt-[80px] rounded-tl-[16px] rounded-tr-[16px]">
               <img
                 src="/image/surgeplan.png"
                 alt=""
@@ -354,7 +334,7 @@ const Home = () => {
             </ScrollAnimation>
           </div>
           <div className="w-full md:w-[50%]">
-            <div className="bg-[#FCFCFC] pt-[80px] rounded-tl-[16px] rounded-tr-[16px]">
+            <div className="bg-[#f9f9f9] pt-[80px] rounded-tl-[16px] rounded-tr-[16px]">
               <img
                 src="/image/hni.png"
                 alt=""
@@ -392,13 +372,13 @@ const Home = () => {
       </section>
 
       <section className="px-[16px] md:px-[60px]  lg:px-[120px] mb-[60px] md:mb-[100px] lg:mb-[120px]">
-        <div className="text-[20px] md:text-[28px] lg:text-[40px] md:mb-[80px] mb-[36px] font-medium flex justify-center  w-full ">
-          <p>HOW it works</p> <img src="./image/fire.png" alt="fire" />
+        <div className="text-[20px] md:text-[28px] lg:text-[40px] md:mb-[80px] mb-[36px] gap-5 font-medium flex justify-center items-center">
+          <p>How it works</p> <img src="./image/fire.png" alt="fire" className="h-[32px] w-[32px]" />
         </div>
 
         <div className="flex items-center flex-col md:flex-row gap-[50px] mt-[20px]">
           <div className="w-full md:w-[45%]">
-            <div className="bg-[#FCFCFC] pb-[80px] rounded-bl-[16px] rounded-br-[16px]">
+            <div className="bg-[#f9f9f9] pb-[80px] rounded-bl-[16px] rounded-br-[16px]">
               <img
                 src="/image/planlist.png"
                 alt=""
@@ -453,7 +433,7 @@ const Home = () => {
           </div> */}
           <Progress number={2}/>
           <div className="w-full md:w-[45%]">
-            <div className="bg-[#FCFCFC] pb-[80px] rounded-bl-[16px] rounded-br-[16px]">
+            <div className="bg-[#f9f9f9] pb-[80px] rounded-bl-[16px] rounded-br-[16px]">
               <img
                 src="/image/topup.png"
                 alt=""
@@ -464,7 +444,7 @@ const Home = () => {
         </div>
         <div className="flex items-center flex-col md:flex-row gap-[50px] mt-[20px]">
           <div className="w-full md:w-[45%]">
-            <div className="bg-[#FCFCFC] pb-[80px] rounded-bl-[16px] rounded-br-[16px]">
+            <div className="bg-[#f9f9f9] pb-[80px] rounded-bl-[16px] rounded-br-[16px]">
               <img
                 src="/image/payment.png"
                 alt=""
@@ -510,12 +490,12 @@ const Home = () => {
               className="w-full object-contain rounded-tl-[16px] rounded-tr-[16px]"
               alt=""
             />
-            <div className="lg:p-[42px] md:p-[24px] p-[12px] bg-[#FCFCFC]">
-              <div className="flex flex-col lg:flex-row  gap-3 items-center mb-[16px] md:mb-[24px]">
-                <h3 className="md:text-[24px] text-[18px] font-medium">
+            <div className="lg:p-[42px] md:p-[24px] p-[12px] bg-[#f9f9f9]">
+              <div className="flex flex-row  gap-3 items-center mb-[16px] md:mb-[24px]">
+                <h3 className="lg:text-[22px] md:text-[18px] text-[16px] font-medium">
                   Mini-Health Plans
                 </h3>
-                <button className="bg-white px-3 py-2 rounded-xl">
+                <button className="bg-white px-2 py-2 rounded-xl text-[12px]">
                   Coming soon
                 </button>
               </div>{" "}
@@ -536,12 +516,12 @@ const Home = () => {
               className="w-full object-contain rounded-tl-[16px] rounded-tr-[16px]"
               alt=""
             />
-            <div className="lg:p-[42px] md:p-[24px] p-[12px] bg-[#FCFCFC]">
-              <div className="flex flex-col lg:flex-row  gap-3 items-center mb-[16px] md:mb-[24px]">
-                <h3 className="md:text-[24px] text-[18px] font-medium">
+            <div className="lg:p-[42px] md:p-[24px] p-[12px] bg-[#f9f9f9]">
+              <div className="flex flex-row  gap-3 items-center mb-[16px] md:mb-[24px]">
+              <h3 className="lg:text-[22px] md:text-[18px] text-[16px] font-medium">
                   Vant SNBL (Save Now Buy Later)
                 </h3>
-                <button className="bg-white px-3 py-2 rounded-xl">
+                <button className="bg-white px-2 py-2 rounded-xl text-[12px]">
                   Coming soon
                 </button>
               </div>{" "}
@@ -568,7 +548,7 @@ const Home = () => {
         </div>
 
         <div className="flex gap-4 flex-col md:flex-row mb-[24px] md:mb-[24px] ">
-          <div className="w-full md:w-[50%] px-[20px] md:px-[30px] lg:px-[40px] pt-[80px] md:pt-[100px] pb-[20px] md:pb-[40px] bg-[#FCFCFC] rounded-2xl">
+          <div className="w-full md:w-[50%] px-[20px] md:px-[30px] lg:px-[40px] pt-[80px] md:pt-[100px] pb-[20px] md:pb-[40px] bg-[#f9f9f9] rounded-2xl">
             <img src="./image/padlock.png" alt="" className="mb-[28px]" />
             <h3 className="text-[18px] md:text-[20px] lg:text-[24px] mb-[20px] font-semibold">
               Enhanced Security
@@ -580,7 +560,7 @@ const Home = () => {
               also follow AML/CFT policy.
             </p>
           </div>
-          <div className=" w-full md:w-[50%] px-[20px] md:px-[30px] lg:px-[40px] pt-[80px] md:pt-[100px] pb-[20px] md:pb-[40px] bg-[#FCFCFC] rounded-2xl">
+          <div className=" w-full md:w-[50%] px-[20px] md:px-[30px] lg:px-[40px] pt-[80px] md:pt-[100px] pb-[20px] md:pb-[40px] bg-[#f9f9f9] rounded-2xl">
             {" "}
             <img src="./image/plug.png" alt="" className="mb-[28px]" />
             <h3 className="text-[18px] md:text-[20px] lg:text-[24px] mb-[20px] font-semibold">
@@ -766,7 +746,7 @@ const Home = () => {
         </div>
       </section>
       <section className="px-[16px] md:px-[60px]  lg:px-[120px] mb-[60px] md:mb-[80px] lg:mb-[120px]">
-        <div className="flex py-[40px] md:py-[78px] bg-[#FCFCFC] px-[30px] md:px-[50px] lg:px-[80px] gap-[60px] flex-row items-center rounded-[16px]">
+        <div className="flex py-[40px] md:py-[78px] bg-[#f9f9f9] px-[30px] md:px-[50px] lg:px-[80px] gap-[60px] flex-row items-center rounded-[16px]">
           <div className="hidden md:flex w-[40%]">
             <img src="./image/appwallet.png" alt="" className="mx-auto" />
           </div>

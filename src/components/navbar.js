@@ -18,36 +18,63 @@ const Navbar = () => {
       {" "}
       <div className="relative px-[16px] md:px-[60px] lg:px-[120px] py-[24px]">
         <div className="flex items-center justify-between ">
-          <img
-            src="./image/logo.png"
-            alt="vant logo"
-            className="object-fit h-[50px] w-[147px]"
-          ></img>
+          <Link to="/" className="mr-10 ">
+            <img
+              src="./image/logo.png"
+              alt="vant logo"
+              className="object-contain h-[50px] w-[147px]"
+            ></img>
+          </Link>
           <div className="hidden md:block">
-            <ul className="text-base flex md:gap-[28px] lg:gap-[38px] items-center text-[#989898] px-[38px] py-[18px] rounded-[40px] bg-[#FAFAFA]">
+            <ul className="text-base flex md:gap-[28px] lg:gap-[38px] items-center text-[#989898] md:px-[28px] lg:px-[38px] py-[18px] rounded-[40px] bg-[#FAFAFA]">
               <Link to="/personal">
-                <li className={`${location.pathname === "/personal"
-            ? "text-blue-500": ""}`}>Personal</li>
+                <li
+                  className={`${
+                    location.pathname === "/personal" ? "text-blue-500" : ""
+                  }`}
+                >
+                  Personal
+                </li>
               </Link>
               <Link to="/product">
-                <li className={`${location.pathname === "/product"
-            ? "text-blue-500": ""}`}>Products</li>
+                <li
+                  className={`${
+                    location.pathname === "/product" ? "text-blue-500" : ""
+                  }`}
+                >
+                  Products
+                </li>
               </Link>
               <Link to="/company">
-                <li className={`${location.pathname === "/company"
-            ? "text-blue-500": ""}`}>Company</li>
+                <li
+                  className={`${
+                    location.pathname === "/company" ? "text-blue-500" : ""
+                  }`}
+                >
+                  Company
+                </li>
               </Link>
               <Link to="">
-                <li className={`${location.pathname === "/developer"
-            ? "text-blue-500": ""}`}>Developers</li>
+                <li
+                  className={`${
+                    location.pathname === "/developer" ? "text-blue-500" : ""
+                  }`}
+                >
+                  Developers
+                </li>
               </Link>
               <Link to="">
-                <li className={`${location.pathname === "/personal"
-            ? "text-blue-500": ""}`}>Business</li>
+                <li
+                  className={`${
+                    location.pathname === "/personal" ? "text-blue-500" : ""
+                  }`}
+                >
+                  Business
+                </li>
               </Link>
             </ul>
           </div>
-          <button className="text-base hidden  xl:flex gap-[8px] items-center text-[#3B6896] px-[28px] py-[18px] rounded-[40px] border border-[#3B6896] ">
+          <button className="text-base hidden  xl:flex gap-[8px] items-center hover:bg-slate-100 text-[#3B6896] px-[28px] py-[18px] rounded-[40px] border border-[#3B6896] ">
             <div>
               <svg
                 width="20"
@@ -82,53 +109,60 @@ const Navbar = () => {
             {toggle ? <GiHamburgerMenu /> : <AiOutlineClose />}
           </button>
         </div>
-        
       </div>
       {showMenu && (
-          <m.div
-            initial={{ x:-30, opacity: 0 }}
-            animate={{
-              x: 0,
-              opacity: 1,
-              // scale: 1,
-            }}
-            transition={{
-              duration: 1.2,
-            }}
-            className=" mt-4 absolute top-[82px] flex space-x-3 bg-white h-screen   lg:hidden w-full py-[30px] px-[20px] z-10"
-          >
-             
-
-              <ul className="flex flex-col space-y-9  mb-2 text-black text-4xl ">
-                <Link to="/">
-                  <li className="cursor-pointer   hover:text-[#1b599b] hover:border-b hover:border-b-lg hover:border-b-[#124072]">
-                    Home
-                  </li>
-                </Link>
-                <Link to="/personal">
-                  <li className="cursor-pointer   hover:text-[#1b599b] hover:border-b hover:border-b-lg hover:border-b-[#124072]">
-                    Personal
-                  </li>
-                </Link>
-                <Link to="/product">
-                  <li className="cursor-pointer   hover:text-[#1b599b] hover:border-b hover:border-b-lg hover:border-b-[#124072]">
-                    Products
-                  </li>
-                </Link>
-                <Link to="/company">
-                  <li className="cursor-pointer   hover:text-[#1b599b] hover:border-b hover:border-b-lg hover:border-b-[#124072]">
-                    Company
-                  </li>
-                </Link>
-                <Link to="/">
-                  <li className="cursor-pointer   hover:text-[#1b599b] hover:border-b hover:border-b-lg hover:border-b-[#124072]">
-                    Business
-                  </li>
-                </Link>
-              
-              </ul>
-          </m.div>
-        )}
+        <m.div
+          initial={{ x: -30, opacity: 0 }}
+          animate={{
+            x: 0,
+            opacity: 1,
+            // scale: 1,
+          }}
+          transition={{
+            duration: 1.2,
+          }}
+          className=" mt-4 absolute top-[82px] flex space-x-3 bg-white h-screen   lg:hidden w-full py-[30px] px-[20px] z-10"
+        >
+          <ul className="flex flex-col space-y-9  mb-2 text-black text-4xl ">
+            <Link to="/personal">
+              <li className="cursor-pointer   hover:text-[#1b599b] hover:border-b hover:border-b-lg hover:border-b-[#124072]">
+                Personal
+              </li>
+            </Link>
+            <Link to="/product">
+              <li className="cursor-pointer   hover:text-[#1b599b] hover:border-b hover:border-b-lg hover:border-b-[#124072]">
+                Products
+              </li>
+            </Link>
+            <Link to="/company">
+              <li className="cursor-pointer   hover:text-[#1b599b] hover:border-b hover:border-b-lg hover:border-b-[#124072]">
+                Company
+              </li>
+            </Link>
+            <Link to="/">
+              <li className="cursor-pointer   hover:text-[#1b599b] hover:border-b hover:border-b-lg hover:border-b-[#124072]">
+                Business
+              </li>
+            </Link>
+            <li> <div className="flex justify-center items-center gap-6 mt-[40px]">
+              <img
+                src="./image/googleplay.png"
+                alt="google play logo"
+                className="w-[135px]
+            h-[40px] lg:w-[189px]
+            lg:h-[56px]"
+              />
+              <img
+                src="./image/appstore.png"
+                alt="app store logo"
+                className="w-[120px]
+            h-[40px] lg:w-[168px]
+            lg:h-[56px]"
+              />
+            </div></li>
+          </ul>
+        </m.div>
+      )}
     </div>
   );
 };

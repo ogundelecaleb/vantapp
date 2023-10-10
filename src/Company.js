@@ -6,13 +6,13 @@ const Company = () => {
   return (
     <div>
       <Navbar />
-      <section className=" px-[16px] md:px-[60px] md:gap-4 lg:px-[120px] mt-[80px] relative">
-        <h2 className="animate__lightSpeedInLeft animate__slow animate__animated text-[24px] md:text-[32px] lg:text-[80px] text-black text-center font-bold max-w-[996px] mx-auto">
+      <section className=" px-[16px] md:px-[60px] md:gap-4 lg:px-[120px] mt-[80px] relative mb-[60px] md:mb-[100px] lg:mb-[120px] ">
+        <h2 className="animate__fadeInUp animate__slow animate__animated text-[24px] md:text-[28px] lg:text-[40px] text-black text-center font-medium max-w-[996px] mb-[24px] md:mb-[40px] lg:mb-[80px] mx-auto">
           Seeking to be the Bridge to a better quality of life through Inclusive
           Financial Technological solutions.{" "}
         </h2>
 
-        <img src="./image/companycartoon.png" alt="cartoon" />
+        <img src="./image/companycartoon.png" alt="cartoon" className="mx-auto" />
       </section>
       <section className="px-[16px] md:px-[60px]  lg:px-[120px] py-[24px] grid grid-cols-1 md:grid-cols-2 gap-[40px] md:gap-5 mb-[60px] md:mb-[100px] lg:mb-[120px]">
         <div className="w-full ">
@@ -233,33 +233,37 @@ const Company = () => {
           </div>
         </div>
       </section>
-      <section>
+      <section className="">
         <img
           src="./image/companycartoon1.png"
           alt="cartoon"
-          className="animate-bounce delay-700 duration-400 transform transition-all"
+          className="animate-bounce delay-700 duration-400 transform transition-all mx-auto"
         />
       </section>
       <section className="px-[16px] md:px-[60px]  lg:px-[120px] mb-[60px] md:mb-[80px] lg:mb-[120px]">
-        <div className="flex pt-[40px] md:pt-[78px] bg-[#FCFCFC] px-[30px] md:px-[50px] lg:px-[80px] gap-[60px] flex-row items-center">
+        <div className="flex py-[40px] md:py-[78px] bg-[#f9f9f9] px-[30px] md:px-[50px] lg:px-[80px] gap-[60px] flex-row items-center rounded-[16px]">
           <div className="hidden md:flex w-[40%]">
             <img src="./image/appwallet.png" alt="" className="mx-auto" />
           </div>
           <div className="w-full md:w-[60%]">
-            <h3 className="  text-[20px] md:text-[28px] lg:text-[40px] mb-[16px] md:mb-[36px] lg:mb-[56px] font-medium">
+            <h3 className="  text-[24px] md:text-[28px] lg:text-[40px] mb-[16px] md:mb-[36px] lg:mb-[56px] font-medium">
               Download Vant app today and start your journey towards financial
               freedom.
             </h3>
-            <div className="flex gap-4 md:gap-6">
+            <div className="flex justify-center items-center gap-6 mt-[40px]">
               <img
                 src="./image/googleplay.png"
-                alt="Google pLay"
-                className="w-[40px]"
+                alt="google play logo"
+                className="w-[135px]
+            h-[40px] lg:w-[189px]
+            lg:h-[56px]"
               />
               <img
                 src="./image/appstore.png"
-                alt="app store"
-                className="w-[40px]"
+                alt="app store logo"
+                className="w-[120px]
+            h-[40px] lg:w-[168px]
+            lg:h-[56px]"
               />
             </div>
           </div>

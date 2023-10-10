@@ -5,6 +5,7 @@ import "animate.css/animate.min.css";
 import Personal from "./Personal";
 import Product from "./Product";
 import Company from "./Company";
+import TermsOfUse from "./TermsOfUse";
 
 
 function App() {
@@ -15,6 +16,7 @@ function App() {
         <Route path="/personal" element={<Personal />} />
         <Route path="/product" element={<Product />} />
         <Route path="/company" element={<Company />} />
+        <Route path="/terms" element={<TermsOfUse />} />
       </Routes>
     </Router>
   );
