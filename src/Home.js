@@ -81,7 +81,7 @@ const Home = () => {
           </button>
         </div>
 
-        <h2 className="quote animate__slow animate__animated text-[37px] md:text-[56px] lg:text-[80px] text-black text-center font-bold max-w-[996px] mx-auto">
+        <h2 className=" animate__slow animate__animated text-[37px] md:text-[56px] lg:text-[80px] text-black text-center font-bold max-w-[996px] mx-auto">
           Unleash Your <span className="text-[#3B6896]">Savings</span> Potential
         </h2>
         <p className="mt-[24px] text-[#878787] max-w-[996px] mx-auto text-center mb-[40px]">
