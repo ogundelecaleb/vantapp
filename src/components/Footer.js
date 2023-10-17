@@ -87,7 +87,7 @@ const Footer = () => {
         </div>
 
         <div className="flex justify-between">
-          <p className="mt-[40px]">
+          <p className="mt-[40px] text-[12px] md:text-[14px] lg:text-[16px]">
             ©2023. Advant Capitol. All rights reserved
           </p>
           <div className="gap-4 items-center hidden md:flex">
@@ -97,7 +97,7 @@ const Footer = () => {
           </div>
         </div>
       </div>
-      <p className="pb-[40px]">
+      <p className="pb-[40px] text-[12px] md:text-[14px] lg:text-[16px]">
         Advant Capitol is a financial technology company that is duly registered
         with the Corporate Affairs Commission of Nigeria (RC: 1750394). Our
         office is located at 39 Govt Building, Isale Igbehin, Abeokuta, Ogun.

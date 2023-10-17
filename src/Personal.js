@@ -1,15 +1,17 @@
-import React from "react";
+import React, { useState } from "react";
 import Navbar from "./components/navbar";
 import Footer from "./components/Footer";
 import ScrollAnimation from "react-animate-on-scroll";
 import "./animate.css";
 
 const Personal = () => {
+  const [category, setCategory] = useState("category1");
+
   return (
     <div>
       <Navbar />
       <section className="px-[16px] md:px-[60px] md:gap-4 lg:px-[120px] mt-[80px] relative mb-[60px] md:mb-[80px] lg:mb-[120px]">
-        <h2 className="animate__lightSpeedInLeft animate__slow animate__animated text-[40px] md:text-[56px] lg:text-[80px] text-black text-center font-bold max-w-[996px] mx-auto">
+        <h2 className=" animate__slow animate__animated text-[37px] md:text-[56px] lg:text-[80px] text-black text-center font-bold max-w-[996px] mx-auto">
           <span className="text-[#3B6896]">Seamless</span> Savings, anytime,
           Anywhere!
         </h2>
@@ -119,7 +121,52 @@ const Personal = () => {
           </div>
         </div>
       </section>
-      <section className="px-[16px] md:px-[60px]  lg:px-[120px] mb-[60px] md:mb-[100px] lg:mb-[120px]">
+      <section className="px-[16px] md:px-[60px]  lg:px-[120px] mb-[60px] md:mb-[100px] lg:mb-[120px] lg:hidden">
+        <h3 className="text-[20px] md:text-[28px] lg:text-[40px] md:mb-[28px] mb-[16px] font-medium">
+          Here’s a plan to save better{" "}
+        </h3>
+        <div className="mb-[24px]">
+        <div className="flex justify-center bg-[#f9f9f9] mb-[20px]">
+            <img src="./image/category1.png" alt=""  className="h-[294px] w-[258px] object-contain"/>
+          </div>
+          <div>
+            {" "}
+            <h3 className="text-[24px] font-medium text-[#0F0F10] mb-[16px]">Set clear goals</h3>
+            <p className="text-[12px] text-[#5F5F60] ">Define your December spending targets.</p>
+          </div>
+        </div>
+        <div className="mb-[24px]">
+        <div className="flex justify-center bg-[#f9f9f9] mb-[20px]">
+            <img src="./image/category.png" alt="" className="h-[294px] w-[258px] object-contain"/>
+          </div>
+          <div>
+            {" "}
+            <h3 className="text-[24px] font-medium text-[#0F0F10] mb-[16px]">Set clear goals</h3>
+            <p className="text-[12px] text-[#5F5F60] ">Define your December spending targets.</p>
+          </div>
+        </div>
+        <div className="mb-[24px]">
+        <div className="flex justify-center bg-[#f9f9f9] mb-[20px]">
+            <img src="./image/kolo.png" alt="" className="h-[294px] w-[258px] object-contain"/>
+          </div>
+          <div>
+            {" "}
+            <h3 className="text-[24px] font-medium text-[#0F0F10] mb-[16px]">Set clear goals</h3>
+            <p className="text-[12px] text-[#5F5F60] ">Define your December spending targets.</p>
+          </div>
+        </div>
+        <div className="mb-[24px]">
+          <div className="flex justify-center bg-[#f9f9f9] mb-[20px]">
+            <img src="./image/category4.png" alt="" className="h-[294px] w-[258px] object-contain" />
+          </div>
+          <div>
+            {" "}
+            <h3 className="text-[24px] font-medium text-[#0F0F10] mb-[16px]">Set clear goals</h3>
+            <p className="text-[12px] text-[#5F5F60] ">Define your December spending targets.</p>
+          </div>
+        </div>
+      </section>
+      <section className="px-[16px] md:px-[60px]  lg:px-[120px] mb-[60px] md:mb-[100px] lg:mb-[120px] hidden lg:block">
         <div className="w-full md:w-[50%] mb-[28px] md:mb-[36px] lg:mb-[56px]">
           <h3 className="text-[20px] md:text-[28px] lg:text-[40px] md:mb-[28px] mb-[16px] font-medium">
             Here’s a plan to save better{" "}
@@ -127,28 +174,62 @@ const Personal = () => {
         </div>
         <div className="flex items-center flex-col md:flex-row gap-[50px] mt-[20px]">
           <div className="w-full md:w-[50%]">
-            <ul className="border-l pl-[32px]">
-              <li className="py-[35px]">
+            <ul className="">
+              <li
+                onClick={() => setCategory("category1")}
+                className={` ${
+                  category === "category1" ? "border-l-[#7C9AB9] " : ""
+                } border-l-[3px] cursor-pointer pl-[32px] py-[35px]`}
+              >
                 <h3>Set clear goals</h3>
                 <p>Define your December spending targets.</p>
               </li>
-              <li className="py-[35px]">
-                <h3>Set clear goals</h3>
-                <p>Define your December spending targets.</p>
+              <li
+                onClick={() => setCategory("category2")}
+                className={` ${
+                  category === "category2" ? "border-l-[#7C9AB9] " : ""
+                } border-l-[3px] cursor-pointer   pl-[32px] py-[35px]`}
+              >
+                <h3>Budget smart</h3>
+                <p>Allocate funds for gifts, festivities, and treats.</p>
               </li>
-              <li className="py-[35px]">
-                <h3>Set clear goals</h3>
-                <p>Define your December spending targets.</p>
+              <li
+                onClick={() => setCategory("category3")}
+                className={` ${
+                  category === "category3" ? "border-l-[#7C9AB9] " : ""
+                } border-l-[3px] cursor-pointer  pl-[32px] py-[35px]`}
+              >
+                <h3>Track expenses</h3>
+                <p>Monitor your spending to stay on course.</p>
               </li>
-              <li className="py-[35px]">
-                <h3>Set clear goals</h3>
-                <p>Define your December spending targets.</p>
+              <li
+                onClick={() => setCategory("category4")}
+                className={` ${
+                  category === "category4" ? "border-l-[#7C9AB9] " : ""
+                } border-l-[3px] cursor-pointer  pl-[32px] py-[35px]`}
+              >
+                <h3>Explore Vant features</h3>
+                <p>Utilize dollar savings and insights.</p>
               </li>
             </ul>
           </div>
           <div className="w-full md:w-[50%]">
             {" "}
-            <img src="./image/selectcategory.png" alt="" />
+            <img
+              src={
+                category === "category1"
+                  ? "./image/category1.png"
+                  : category === "category2"
+                  ? "./image/category.png"
+                  : category === "category3"
+                  ? "./image/kolo.png"
+                  : category === "category4"
+                  ? "./image/category4.png"
+                  : ""
+              }
+              alt=""
+              className="h-[361px] w-[428px] object-contain"
+            />
           </div>
         </div>
       </section>

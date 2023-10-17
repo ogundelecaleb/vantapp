@@ -4,44 +4,84 @@ import Footer from "./components/Footer";
 import ScrollAnimation from "react-animate-on-scroll";
 import "./animate.css";
 import { useInView } from "react-intersection-observer";
+import gsap from "gsap";
+import ScrollTrigger from "gsap/ScrollTrigger";
+// import {SplitText} from "../src/SplitText.min.js";
+import SplitText from "gsap-trial/SplitText"
 
 
-const Progress =({number})=> {
-  const {ref, inView} = useInView({
-    threshold: 0.3
+const Progress = ({ number }) => {
+  const { ref, inView } = useInView({
+    threshold: 0.3,
   });
 
-  return(
-    <div ref={ref} className="relative hidden lg:flex flex-row md:flex-col items-center gap-3 w-full md:w-[10%] h-full">
-            {" "}
-            <div className={` h-[45px] w-[45px] flex  text-lg rounded-full  ${inView? "bg-[#7C9AB9] text-white" : "bg-[#D8E1EA] text-black"} text-center`}>
-              <p className="my-auto mx-auto">{number}</p>{" "}
-            </div>
-            
-            <div className={`md:w-1 w-full h-1 md:h-[514px] ${inView? "bg-[#7C9AB9] " : "bg-[#D8E1EA] "} `}></div>
-          </div>
-  )
-}
+  return (
+    <div
+      ref={ref}
+      className="relative hidden lg:flex flex-row md:flex-col items-center gap-3 w-full md:w-[10%] h-full"
+    >
+      {" "}
+      <div
+        className={` h-[45px] w-[45px] flex  text-lg rounded-full  ${
+          inView ? "bg-[#7C9AB9] text-white" : "bg-[#D8E1EA] text-black"
+        } text-center`}
+      >
+        <p className="my-auto mx-auto">{number}</p>{" "}
+      </div>
+      <div
+        className={`md:w-1 w-full h-1 md:h-[514px] ${
+          inView ? "bg-[#7C9AB9] " : "bg-[#D8E1EA] "
+        } `}
+      ></div>
+    </div>
+  );
+};
 
 const Home = () => {
-
+  gsap.registerPlugin(ScrollTrigger,SplitText);
+  function setupSplits() {
+    const quotes = document.querySelectorAll(".quote");
+    quotes.forEach(quote => {
+      // Reset if needed
+      if(quote.anim) {
+        quote.anim.progress(1).kill();
+        quote.split.revert();
+      }
   
-
-
+      quote.split = new SplitText(quote, { 
+        type: "lines,words,chars",
+        linesClass: "split-line"
+      });
+  
+      // Set up the anim
+      quote.anim = gsap.from(quote.split.chars, {
+        scrollTrigger: {
+          trigger: quote,
+          toggleActions: "restart pause resume reverse",
+          start: "top 50%",
+        },
+        duration: 0.6, 
+        ease: "circ.out", 
+        y: 80, 
+        stagger: 0.02,
+      });
+    });
+  }
+  
+  ScrollTrigger.addEventListener("refresh", setupSplits);
+  setupSplits();
   return (
     <div>
       <Navbar />
       <section className=" px-[16px] md:px-[60px] md:gap-4 lg:px-[120px] mt-[80px] relative">
-
         <div className="w-full ">
-
           <button className=" flex items-center px-[28px] py-[8px] gap-[8px] rounded-[40px] bg-[#f9f9f9] mx-auto text-[#3B6896]">
             <img src="./image/partypopper.png" alt="party popper" />
             <p>Announcing our new website</p>
           </button>
         </div>
 
-        <h2 className=" animate__slow animate__animated text-[32px] md:text-[56px] lg:text-[80px] text-black text-center font-bold max-w-[996px] mx-auto">
+        <h2 className="quote animate__slow animate__animated text-[37px] md:text-[56px] lg:text-[80px] text-black text-center font-bold max-w-[996px] mx-auto">
           Unleash Your <span className="text-[#3B6896]">Savings</span> Potential
         </h2>
         <p className="mt-[24px] text-[#878787] max-w-[996px] mx-auto text-center mb-[40px]">
@@ -177,10 +217,7 @@ const Home = () => {
               Do you want to save money for your future goals?
             </h2>
           </ScrollAnimation>
-          <ScrollAnimation
-            animateIn="animate__fadeInUp"
-            duration={1}
-          >
+          <ScrollAnimation animateIn="animate__fadeInUp" duration={1}>
             <p className="text-[16px] md:text-[18px]  md:mb-[28px] mb-[16px]">
               Whether you sleep or not, the day will dawn. Whether you prepare
               for the future or not, it doesn’t prevent the future from
@@ -244,7 +281,6 @@ const Home = () => {
         <div className="flex items-center flex-col md:flex-row gap-[50px] ">
           <div className="w-full md:w-[50%]">
             <div className="bg-[#f9f9f9] pt-[80px] rounded-tl-[16px] rounded-tr-[16px]">
-              
               <img
                 src="/image/deluxe.png"
                 alt=""
@@ -274,7 +310,6 @@ const Home = () => {
           </div>
           <div className="w-full md:w-[50%]">
             <div className="bg-[#f9f9f9] pt-[80px] rounded-tl-[16px] rounded-tr-[16px]">
-              
               <img
                 src="/image/growplan.png"
                 alt=""
@@ -342,24 +377,24 @@ const Home = () => {
               />
             </div>
             <ScrollAnimation
-            animateIn="animate__fadeInUp"
-            // animateOut="animate__fadeOutRight"
-            duration={1}
-          >
-            <h3 className="text-[18px] md:text-[24px] mb-[20px] ">
-              HNI investment Plan
-            </h3>
+              animateIn="animate__fadeInUp"
+              // animateOut="animate__fadeOutRight"
+              duration={1}
+            >
+              <h3 className="text-[18px] md:text-[24px] mb-[20px] ">
+                HNI investment Plan
+              </h3>
             </ScrollAnimation>
             <ScrollAnimation
-            animateIn="animate__fadeInUp"
-            // animateOut="animate__fadeOutRight"
-            duration={1}
-          >
-            <p className="text-[#5F5F60]">
-              With the HNI investment plan, you can customize the plan to suit
-              your finances with risk appetite most convenient to you. Sounds
-              cool, right?
-            </p>
+              animateIn="animate__fadeInUp"
+              // animateOut="animate__fadeOutRight"
+              duration={1}
+            >
+              <p className="text-[#5F5F60]">
+                With the HNI investment plan, you can customize the plan to suit
+                your finances with risk appetite most convenient to you. Sounds
+                cool, right?
+              </p>
             </ScrollAnimation>
           </div>
         </div>
@@ -373,7 +408,12 @@ const Home = () => {
 
       <section className="px-[16px] md:px-[60px]  lg:px-[120px] mb-[60px] md:mb-[100px] lg:mb-[120px]">
         <div className="text-[20px] md:text-[28px] lg:text-[40px] md:mb-[80px] mb-[36px] gap-5 font-medium flex justify-center items-center">
-          <p>How it works</p> <img src="./image/fire.png" alt="fire" className="h-[32px] w-[32px]" />
+          <p>How it works</p>{" "}
+          <img
+            src="./image/fire.png"
+            alt="fire"
+            className="h-[32px] w-[32px]"
+          />
         </div>
 
         <div className="flex items-center flex-col md:flex-row gap-[50px] mt-[20px]">
@@ -394,7 +434,7 @@ const Home = () => {
             
             <div className="md:w-1 w-full h-1 md:h-[514px] bg-[#7C9AB9]"></div>
           </div> */}
-          <Progress number={1}/>
+          <Progress number={1} />
           <div className="w-full md:w-[45%]">
             <h3 className="text-[20px] md:text-[32px] mb-[48px] font-semibold ">
               Go to investment.
@@ -431,7 +471,7 @@ const Home = () => {
             
             <div className="md:w-1 w-full h-1 md:h-[514px] bg-[#7C9AB9]"></div>
           </div> */}
-          <Progress number={2}/>
+          <Progress number={2} />
           <div className="w-full md:w-[45%]">
             <div className="bg-[#f9f9f9] pb-[80px] rounded-bl-[16px] rounded-br-[16px]">
               <img
@@ -460,7 +500,7 @@ const Home = () => {
     
             <div className="md:w-1 w-full h-1 md:h-[514px] bg-[#7C9AB9]"></div>
           </div> */}
-          <Progress number={3}/>
+          <Progress number={3} />
           <div className="w-full md:w-[45%]">
             <h3 className="text-[20px] md:text-[32px] mb-[48px] font-semibold ">
               Final Lap.{" "}
@@ -518,7 +558,7 @@ const Home = () => {
             />
             <div className="lg:p-[42px] md:p-[24px] p-[12px] bg-[#f9f9f9]">
               <div className="flex flex-row  gap-3 items-center mb-[16px] md:mb-[24px]">
-              <h3 className="lg:text-[22px] md:text-[18px] text-[16px] font-medium">
+                <h3 className="lg:text-[22px] md:text-[18px] text-[16px] font-medium">
                   Vant SNBL (Save Now Buy Later)
                 </h3>
                 <button className="bg-white px-2 py-2 rounded-xl text-[12px]">

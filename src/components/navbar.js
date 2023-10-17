@@ -63,7 +63,7 @@ const Navbar = () => {
                   Developers
                 </li>
               </Link>
-              <Link to="">
+              {/* <Link to="">
                 <li
                   className={`${
                     location.pathname === "/personal" ? "text-blue-500" : ""
@@ -71,7 +71,7 @@ const Navbar = () => {
                 >
                   Business
                 </li>
-              </Link>
+              </Link> */}
             </ul>
           </div>
           <button className="text-base hidden  xl:flex gap-[8px] items-center hover:bg-slate-100 text-[#3B6896] px-[28px] py-[18px] rounded-[40px] border border-[#3B6896] ">
@@ -139,11 +139,11 @@ const Navbar = () => {
                 Company
               </li>
             </Link>
-            <Link to="/">
+            {/* <Link to="/">
               <li className="cursor-pointer   hover:text-[#1b599b] hover:border-b hover:border-b-lg hover:border-b-[#124072]">
                 Business
               </li>
-            </Link>
+            </Link> */}
             <li> <div className="flex justify-center items-center gap-6 mt-[40px]">
               <img
                 src="./image/googleplay.png"
