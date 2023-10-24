@@ -4,10 +4,10 @@ import Footer from "./components/Footer";
 import ScrollAnimation from "react-animate-on-scroll";
 import "./animate.css";
 import { useInView } from "react-intersection-observer";
-import gsap from "gsap";
-import ScrollTrigger from "gsap/ScrollTrigger";
+// import gsap from "gsap";
+// import ScrollTrigger from "gsap/ScrollTrigger";
 // import {SplitText} from "../src/SplitText.min.js";
-import SplitText from "gsap-trial/SplitText"
+// import SplitText from "gsap-trial/SplitText"
 
 
 const Progress = ({ number }) => {
@@ -38,38 +38,38 @@ const Progress = ({ number }) => {
 };
 
 const Home = () => {
-  gsap.registerPlugin(ScrollTrigger,SplitText);
-  function setupSplits() {
-    const quotes = document.querySelectorAll(".quote");
-    quotes.forEach(quote => {
-      // Reset if needed
-      if(quote.anim) {
-        quote.anim.progress(1).kill();
-        quote.split.revert();
-      }
+  // gsap.registerPlugin(ScrollTrigger,SplitText);
+  // function setupSplits() {
+  //   const quotes = document.querySelectorAll(".quote");
+  //   quotes.forEach(quote => {
+  //     // Reset if needed
+  //     if(quote.anim) {
+  //       quote.anim.progress(1).kill();
+  //       quote.split.revert();
+  //     }
   
-      quote.split = new SplitText(quote, { 
-        type: "lines,words,chars",
-        linesClass: "split-line"
-      });
+  //     quote.split = new SplitText(quote, { 
+  //       type: "lines,words,chars",
+  //       linesClass: "split-line"
+  //     });
   
-      // Set up the anim
-      quote.anim = gsap.from(quote.split.chars, {
-        scrollTrigger: {
-          trigger: quote,
-          toggleActions: "restart pause resume reverse",
-          start: "top 50%",
-        },
-        duration: 0.6, 
-        ease: "circ.out", 
-        y: 80, 
-        stagger: 0.02,
-      });
-    });
-  }
+  //     // Set up the anim
+  //     quote.anim = gsap.from(quote.split.chars, {
+  //       scrollTrigger: {
+  //         trigger: quote,
+  //         toggleActions: "restart pause resume reverse",
+  //         start: "top 50%",
+  //       },
+  //       duration: 0.6, 
+  //       ease: "circ.out", 
+  //       y: 80, 
+  //       stagger: 0.02,
+  //     });
+  //   });
+  // }
   
-  ScrollTrigger.addEventListener("refresh", setupSplits);
-  setupSplits();
+  // ScrollTrigger.addEventListener("refresh", setupSplits);
+  // setupSplits();
   return (
     <div>
       <Navbar />
