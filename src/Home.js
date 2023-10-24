@@ -82,7 +82,7 @@ const Home = () => {
         </div>
 
         <h2 className=" animate__slow animate__animated text-[37px] md:text-[56px] lg:text-[80px] text-black text-center font-bold max-w-[996px] mx-auto">
-          Unleash Your <span className="text-[#3B6896]">Savings</span> Potential
+        Empowering Your Financial <span className="text-[#3B6896]">Freedom</span>
         </h2>
         <p className="mt-[24px] text-[#878787] max-w-[996px] mx-auto text-center mb-[40px]">
           Try Vant App, a free app that helps you plan and manage your savings

@@ -6,9 +6,11 @@ const TermsOfUse = () => {
   return (
     <div>
       <Navbar />
-      <div>
-        <h2>Terms of Service</h2>
-        <h3>
+      <section className=" px-[16px] md:px-[90px] md:gap-4 lg:px-[200px] mt-[80px] relative mb-[60px] md:mb-[100px] lg:mb-[120px] ">
+        <h2 className="text-[1.7rem] lg:text-[2.5rem] font-extrabold  text-[#000] tracking-wide mb-3 pb-3 md:pb-5 border-b border-gray-200">
+          Terms of Service
+        </h2>
+        <h3 className="mb-[24px]">
           IT IS IMPORTANT THAT YOU READ THROUGH THESE TERMS OF USE CAREFULLY,
           BEFORE USING THE WEBSITE/APPLICATION (the “SITE”). IF YOU DO NOT
           ACCEPT THESE TERMS, YOU SHOULD NOT CLICK ON “I AGREE”. PLUMTER
@@ -32,30 +34,30 @@ const TermsOfUse = () => {
           these Terms. In that case, “you” or “User” or “your” will refer to
           your business organization in these Terms.
         </p>
-        <p>DEFINITIONS</p>
-        <p>
+        <p className="py-2 ">DEFINITIONS</p>
+        <p className="mb-2">
           “Third Party” shall mean any individual, association, partnership,
           firm, company, corporation, consultant, Subcontractor, or a
           combination thereof, including joint ventures, that is not a party to
           this Agreement.
         </p>
-        <p>
+        <p className="mb-2">
           “User” shall mean any registered and accredited business or
           organization by Plumter to operate and use the Plumter Account.
         </p>
 
-        <p>
+        <p className="mb-2">
           “User Data“ shall mean any data, information, documents, or materials
           submitted by the User to the Company prior to or during the use of the
           Site
         </p>
-        <p>
+        <p className="mb-2">
           Virtual Account” shall mean the wallet account which shall be created
           by Plumter, domiciled with Plumter’s banking partner for the benefit
           of the User upon Plumter’s approval of the User’s request to create a
           profile on its platform.
         </p>
-        <p>SCOPE</p>
+        <p className="py-2">SCOPE</p>
         <ol type="1">
           <li>
             The Terms define the conditions under which the User will access and
@@ -74,7 +76,7 @@ const TermsOfUse = () => {
             from the date of that acceptance.
           </li>
         </ol>
-        <p>ACCOUNT CREATION</p>
+        <p className="py-2">ACCOUNT CREATION</p>
         <ol type="1">
           <li>
             Before using the Services, you must: (a) accept and agree to these
@@ -149,7 +151,7 @@ const TermsOfUse = () => {
             market rate.
           </li>
         </ol>
-        <p>PAYMENT NOTIFICATION</p>
+        <p className="py-2">PAYMENT NOTIFICATION</p>
         <ol>
           <li>
             Plumter will update the User on the status of its payment made via
@@ -169,7 +171,7 @@ const TermsOfUse = () => {
             be responsible for the transaction charges if monies are refunded.
           </li>
         </ol>
-        <p>ACCOUNT SECURITY</p>
+        <p className="py-2">ACCOUNT SECURITY</p>
         <ol>
           <li>
             The User is given dedicated, secure access to their account using
@@ -177,7 +179,7 @@ const TermsOfUse = () => {
             chosen by them at the time of registration, and undertake
           </li>
         </ol>
-
+        </section>
         <section className="px-[16px] md:px-[60px]  lg:px-[120px] mb-[60px] md:mb-[80px] lg:mb-[120px]">
           <div className="flex py-[40px] md:py-[78px] bg-[#f9f9f9] px-[30px] md:px-[50px] lg:px-[80px] gap-[60px] flex-row items-center rounded-[16px]">
             <div className="hidden md:flex w-[40%]">
@@ -207,7 +209,7 @@ const TermsOfUse = () => {
             </div>
           </div>
         </section>
-      </div>
+      
       <Footer />
     </div>
   );

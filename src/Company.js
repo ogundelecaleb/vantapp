@@ -7,7 +7,7 @@ const Company = () => {
     <div>
       <Navbar />
       <section className=" px-[16px] md:px-[60px] md:gap-4 lg:px-[120px] mt-[80px] relative mb-[60px] md:mb-[100px] lg:mb-[120px] ">
-        <h2 className="animate__fadeInUp animate__slow animate__animated text-[24px] md:text-[28px] lg:text-[40px] text-black text-center font-medium max-w-[996px] mb-[24px] md:mb-[40px] lg:mb-[80px] mx-auto">
+        <h2 className=" animate__slow animate__animated text-[24px] md:text-[28px] lg:text-[40px] text-black text-center font-medium max-w-[996px] mb-[24px] md:mb-[40px] lg:mb-[80px] mx-auto">
           Seeking to be the Bridge to a better quality of life through Inclusive
           Financial Technological solutions.{" "}
         </h2>

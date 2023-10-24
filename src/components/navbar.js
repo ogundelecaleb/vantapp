@@ -139,6 +139,11 @@ const Navbar = () => {
                 Company
               </li>
             </Link>
+            <Link to="/">
+              <li className="cursor-pointer   hover:text-[#1b599b] hover:border-b hover:border-b-lg hover:border-b-[#124072]">
+                Developers
+              </li>
+            </Link>
             {/* <Link to="/">
               <li className="cursor-pointer   hover:text-[#1b599b] hover:border-b hover:border-b-lg hover:border-b-[#124072]">
                 Business

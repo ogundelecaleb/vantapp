@@ -7,6 +7,8 @@ import Product from "./Product";
 import Company from "./Company";
 import TermsOfUse from "./TermsOfUse";
 import Blog from "./blog";
+import Faq from "./Faq";
+import Page404 from "./404";
 
 
 function App() {
@@ -19,6 +21,8 @@ function App() {
         <Route path="/company" element={<Company />} />
         <Route path="/terms" element={<TermsOfUse />} />
         <Route path="/blog" element={<Blog />} />
+        <Route path="/faq" element={<Faq />} />
+        <Route path="*" element={<Page404 />} />
       </Routes>
     </Router>
   );
