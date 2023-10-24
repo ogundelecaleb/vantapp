@@ -57,8 +57,9 @@ const TermsOfUse = () => {
           of the User upon Plumter’s approval of the User’s request to create a
           profile on its platform.
         </p>
-        <p className="py-2">SCOPE</p>
-        <ol type="1">
+        <ol className="list-decimal" type="1">
+          <li className="py-2"> SCOPE</li>
+
           <li>
             The Terms define the conditions under which the User will access and
             utilize the Services. Any use of the Site by the User entails the
@@ -75,9 +76,9 @@ const TermsOfUse = () => {
             agree to the new terms and conditions, which will be applicable as
             from the date of that acceptance.
           </li>
-        </ol>
-        <p className="py-2">ACCOUNT CREATION</p>
-        <ol type="1">
+       
+        <li className="py-2"> ACCOUNT CREATION</li>
+       
           <li>
             Before using the Services, you must: (a) accept and agree to these
             Terms and our Privacy Policy; (b) register with us on the Site and
@@ -87,7 +88,7 @@ const TermsOfUse = () => {
             will allow us to verify your business and the identity and/or the
             information of its promoters (“User Information”), including but not
             limited to:
-            <ol type="a">
+            <ol className="list-decimal pl-3">
               <li>Registration documents </li>
               <li>a valid physical address, phone number of the</li>
               <li>bank account information</li>
@@ -150,9 +151,9 @@ const TermsOfUse = () => {
             agree that such disbursement will be made at the prevailing parallel
             market rate.
           </li>
-        </ol>
-        <p className="py-2">PAYMENT NOTIFICATION</p>
-        <ol>
+        
+        <li className="py-2"> PAYMENT NOTIFICATION</li>
+       
           <li>
             Plumter will update the User on the status of its payment made via
             the platform; once a transaction is completed, Plumter will send out
@@ -170,46 +171,46 @@ const TermsOfUse = () => {
             banks, intermediary banks or recipient banks. Plumter will also not
             be responsible for the transaction charges if monies are refunded.
           </li>
-        </ol>
-        <p className="py-2">ACCOUNT SECURITY</p>
-        <ol>
+     
+        <li className="py-2"> ACCOUNT SECURITY</li>
+       
           <li>
             The User is given dedicated, secure access to their account using
             their Login Details. The User is responsible for the password,
             chosen by them at the time of registration, and undertake
           </li>
         </ol>
-        </section>
-        <section className="px-[16px] md:px-[60px]  lg:px-[120px] mb-[60px] md:mb-[80px] lg:mb-[120px]">
-          <div className="flex py-[40px] md:py-[78px] bg-[#f9f9f9] px-[30px] md:px-[50px] lg:px-[80px] gap-[60px] flex-row items-center rounded-[16px]">
-            <div className="hidden md:flex w-[40%]">
-              <img src="./image/appwallet.png" alt="" className="mx-auto" />
-            </div>
-            <div className="w-full md:w-[60%]">
-              <h3 className="  text-[24px] md:text-[28px] lg:text-[40px] mb-[16px] md:mb-[36px] lg:mb-[56px] font-medium">
-                Download Vant app today and start your journey towards financial
-                freedom.
-              </h3>
-              <div className="flex justify-center items-center gap-6 mt-[40px]">
-                <img
-                  src="./image/googleplay.png"
-                  alt="google play logo"
-                  className="w-[135px]
+      </section>
+      <section className="px-[16px] md:px-[60px]  lg:px-[120px] mb-[60px] md:mb-[80px] lg:mb-[120px]">
+        <div className="flex py-[40px] md:py-[78px] bg-[#f9f9f9] px-[30px] md:px-[50px] lg:px-[80px] gap-[60px] flex-row items-center rounded-[16px]">
+          <div className="hidden md:flex w-[40%]">
+            <img src="./image/appwallet.png" alt="" className="mx-auto" />
+          </div>
+          <div className="w-full md:w-[60%]">
+            <h3 className="  text-[24px] md:text-[28px] lg:text-[40px] mb-[16px] md:mb-[36px] lg:mb-[56px] font-medium">
+              Download Vant app today and start your journey towards financial
+              freedom.
+            </h3>
+            <div className="flex justify-center items-center gap-6 mt-[40px]">
+              <img
+                src="./image/googleplay.png"
+                alt="google play logo"
+                className="w-[135px]
             h-[40px] lg:w-[189px]
             lg:h-[56px]"
-                />
-                <img
-                  src="./image/appstore.png"
-                  alt="app store logo"
-                  className="w-[120px]
+              />
+              <img
+                src="./image/appstore.png"
+                alt="app store logo"
+                className="w-[120px]
             h-[40px] lg:w-[168px]
             lg:h-[56px]"
-                />
-              </div>
+              />
             </div>
           </div>
-        </section>
-      
+        </div>
+      </section>
+
       <Footer />
     </div>
   );

@@ -255,27 +255,27 @@ const Home = () => {
             <p className="text-[#3B6896] font-semibold ">INVEST WITH US</p>{" "}
             <img src="./image/moneypack.png" alt="" />
           </div>
-          <ScrollAnimation
+          {/* <ScrollAnimation
             animateIn="animate__fadeInUp"
             // animateOut="animate__fadeOutRight"
             duration={1}
-          >
+          > */}
             <h3 className="text-[20px] md:text-[28px] lg:text-[40px] md:mb-[28px] mb-[16px] font-medium">
               All-in-one Investment solutions
             </h3>{" "}
-          </ScrollAnimation>
-          <ScrollAnimation
+          {/* </ScrollAnimation> */}
+          {/* <ScrollAnimation
             animateIn="animate__fadeInUp"
             // animateOut="animate__fadeOutRight"
             duration={1}
-          >
+          > */}
             <p className="text-[16px] md:text-[18px]  md:mb-[28px] mb-[16px]">
               We have tailored our investment plans to suit anybody. Earn 5%-13%
               P.A when you invest with any of these Vant app investment plans.
               Not just that, we also have HNI plans for high net worth investors
               willing to pursue a custom investment.
             </p>
-          </ScrollAnimation>
+          {/* </ScrollAnimation> */}
         </div>
 
         <div className="flex items-center flex-col md:flex-row gap-[50px] ">
@@ -287,26 +287,26 @@ const Home = () => {
                 className="mx-auto h-[350px] md:h-[440px]"
               />
             </div>
-            <ScrollAnimation
+            {/* <ScrollAnimation
               animateIn="animate__fadeInUp"
               // animateOut="animate__fadeOutRight"
               duration={1}
-            >
+            > */}
               <h3 className="text-[18px] md:text-[24px] mb-[20px] ">
                 Deluxe investment Plan
               </h3>{" "}
-            </ScrollAnimation>
-            <ScrollAnimation
+            {/* </ScrollAnimation> */}
+            {/* <ScrollAnimation
               animateIn="animate__fadeInUp"
               // animateOut="animate__fadeOutRight"
               duration={1}
-            >
+            > */}
               <p className="text-[#5F5F60]">
                 With the deluxe plan, you can earn up to 5% P.A with a minimum
                 of 1 unit. You will have access to make withdrawals after 1
                 month.
               </p>
-            </ScrollAnimation>
+            {/* </ScrollAnimation> */}
           </div>
           <div className="w-full md:w-[50%]">
             <div className="bg-[#f9f9f9] pt-[80px] rounded-tl-[16px] rounded-tr-[16px]">
@@ -317,25 +317,25 @@ const Home = () => {
               />
               {/* </ScrollAnimation> */}
             </div>
-            <ScrollAnimation
+            {/* <ScrollAnimation
               animateIn="animate__fadeInUp"
               // animateOut="animate__fadeOutRight"
               duration={1}
-            >
+            > */}
               <h3 className="text-[18px] md:text-[24px] mb-[20px] ">
                 Grow investment Plan{" "}
               </h3>
-            </ScrollAnimation>
-            <ScrollAnimation
+            {/* </ScrollAnimation> */}
+            {/* <ScrollAnimation
               animateIn="animate__fadeInUp"
               // animateOut="animate__fadeOutRight"
               duration={1}
-            >
+            > */}
               <p className="text-[#5F5F60]">
                 With the grow plan, you can earn up to 10% P.A with a minimum of
                 3 unit. You will have access to make withdrawals after 3 months.
               </p>
-            </ScrollAnimation>
+            {/* </ScrollAnimation> */}
           </div>
         </div>
         <div className="flex items-center flex-col md:flex-row gap-[50px] mt-[20px]">
@@ -347,26 +347,26 @@ const Home = () => {
                 className="mx-auto h-[350px] md:h-[440px]"
               />
             </div>
-            <ScrollAnimation
+            {/* <ScrollAnimation
               animateIn="animate__fadeInUp"
               // animateOut="animate__fadeOutRight"
               duration={1}
-            >
+            > */}
               <h3 className="text-[18px] md:text-[24px] mb-[20px] ">
                 Surge investment Plan{" "}
               </h3>
-            </ScrollAnimation>
-            <ScrollAnimation
+            {/* </ScrollAnimation> */}
+            {/* <ScrollAnimation
               animateIn="animate__fadeInUp"
               // animateOut="animate__fadeOutRight"
               duration={1}
-            >
+            > */}
               <p className="text-[#5F5F60]">
                 With the surge plan, you can earn up to 13% P.A with a minimum
                 of 5 unit. You will have access to make withdrawals after 6
                 months.
               </p>
-            </ScrollAnimation>
+            {/* </ScrollAnimation> */}
           </div>
           <div className="w-full md:w-[50%]">
             <div className="bg-[#f9f9f9] pt-[80px] rounded-tl-[16px] rounded-tr-[16px]">
@@ -376,26 +376,26 @@ const Home = () => {
                 className="mx-auto h-[350px] md:h-[440px]"
               />
             </div>
-            <ScrollAnimation
+            {/* <ScrollAnimation
               animateIn="animate__fadeInUp"
               // animateOut="animate__fadeOutRight"
               duration={1}
-            >
+            > */}
               <h3 className="text-[18px] md:text-[24px] mb-[20px] ">
                 HNI investment Plan
               </h3>
-            </ScrollAnimation>
-            <ScrollAnimation
+            {/* </ScrollAnimation> */}
+            {/* <ScrollAnimation
               animateIn="animate__fadeInUp"
               // animateOut="animate__fadeOutRight"
               duration={1}
-            >
+            > */}
               <p className="text-[#5F5F60]">
                 With the HNI investment plan, you can customize the plan to suit
                 your finances with risk appetite most convenient to you. Sounds
                 cool, right?
               </p>
-            </ScrollAnimation>
+            {/* </ScrollAnimation> */}
           </div>
         </div>
         <div className="w-full mt-[32px]">
