@@ -9,6 +9,7 @@ import TermsOfUse from "./TermsOfUse";
 import Blog from "./blog";
 import Faq from "./Faq";
 import Page404 from "./404";
+import Privacy from "./Privacy";
 
 
 function App() {
@@ -23,6 +24,7 @@ function App() {
         <Route path="/blog" element={<Blog />} />
         <Route path="/faq" element={<Faq />} />
         <Route path="*" element={<Page404 />} />
+        <Route path="privacy" element={<Privacy />} />
       </Routes>
     </Router>
   );

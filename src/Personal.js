@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import Navbar from "./components/navbar";
 import Footer from "./components/Footer";
-import ScrollAnimation from "react-animate-on-scroll";
+// import ScrollAnimation from "react-animate-on-scroll";
 import "./animate.css";
 
 const Personal = () => {
@@ -30,30 +30,30 @@ const Personal = () => {
       </section>
       <section className="px-[16px] md:px-[60px]  lg:px-[120px] mb-[60px] md:mb-[100px] lg:mb-[120px]">
         <div className="w-full md:w-[50%] mb-[28px] md:mb-[36px] lg:mb-[56px]">
-          <ScrollAnimation animateIn="animate__fadeInUp" duration={1}>
+          {/* <ScrollAnimation animateIn="animate__fadeInUp" duration={1}> */}
             <h3 className="text-[20px] md:text-[28px] lg:text-[40px] md:mb-[28px] mb-[16px] font-medium">
               All-in-one Investment solutions
             </h3>{" "}
-          </ScrollAnimation>
-          <ScrollAnimation animateIn="animate__fadeInUp" duration={1}>
+          {/* </ScrollAnimation> */}
+          {/* <ScrollAnimation animateIn="animate__fadeInUp" duration={1}> */}
             <p className="text-[16px] md:text-[18px]  md:mb-[28px] mb-[16px]">
               Our app is designed to fit your life, offering you the convenience
               of saving seamlessly, wherever and whenever suits you best.
               Whether it’s a quick deposit during your lunch break or setting up
               a fixed savings.
             </p>
-          </ScrollAnimation>
+          {/* </ScrollAnimation> */}
         </div>
 
         <div className="flex items-center flex-col md:flex-row gap-[50px] ">
           <div className="w-full md:w-[50%]">
             <div className="bg-[#f9f9f9] pt-[20px] md:pt-[30px] lg:pt-[40px] px-[20px] md:px-[30px] lg:px-[40px] md: rounded-tl-[16px] rounded-tr-[16px]">
-              <ScrollAnimation animateIn="animate__fadeInUp" duration={1}>
+              {/* <ScrollAnimation animateIn="animate__fadeInUp" duration={1}> */}
                 <h3 className="text-[18px] md:text-[24px] lg:text-[32px] mb-[20px] ">
                   Quick Savings{" "}
                 </h3>
-              </ScrollAnimation>
-              <ScrollAnimation animateIn="animate__fadeInUp" duration={1}>
+              {/* </ScrollAnimation> */}
+              {/* <ScrollAnimation animateIn="animate__fadeInUp" duration={1}> */}
                 <p className="text-[#5F5F60] mb-[20px] md:mb-[40px]">
                   Save random amounts and top-up us at when convenient. Save
                   towards your Personal Goals
@@ -62,7 +62,7 @@ const Personal = () => {
                   Keep money aside by setting specific goals over a period of
                   time with a set deposit interval with vant.
                 </p>
-              </ScrollAnimation>
+              {/* </ScrollAnimation> */}
               <img src="/image/quicksaving.png" alt="" className="mx-auto" />
             </div>
           </div>
@@ -81,12 +81,12 @@ const Personal = () => {
         <div className="flex items-center flex-col md:flex-row gap-[50px] mt-[20px]">
           <div className="w-full md:w-[50%]">
             <div className="bg-[#f9f9f9] pt-[20px] md:pt-[30px] lg:pt-[40px] px-[20px] md:px-[30px] lg:px-[40px] md: rounded-tl-[16px] rounded-tr-[16px]">
-              <ScrollAnimation animateIn="animate__fadeInUp" duration={1}>
+              {/* <ScrollAnimation animateIn="animate__fadeInUp" duration={1}> */}
                 <h3 className="text-[18px] md:text-[24px] lg:text-[32px] mb-[20px] ">
                   Target Savings{" "}
                 </h3>
-              </ScrollAnimation>
-              <ScrollAnimation animateIn="animate__fadeInUp" duration={1}>
+              {/* </ScrollAnimation> */}
+              {/* <ScrollAnimation animateIn="animate__fadeInUp" duration={1}> */}
                 <p className="text-[#5F5F60] mb-[20px] md:mb-[40px]">
                   Lock money away for a fixed duration without having access to
                   it until maturity. It's like having a custom fixed deposit.
@@ -95,19 +95,19 @@ const Personal = () => {
                   Keep money aside by setting specific goals over a period of
                   time with a set deposit interval with vant.
                 </p>
-              </ScrollAnimation>
+              {/* </ScrollAnimation> */}
 
               <img src="/image/targetsaving.png" alt="" className="mx-auto" />
             </div>
           </div>
           <div className="w-full md:w-[50%]">
             <div className="bg-[#f9f9f9] pt-[20px] md:pt-[30px] lg:pt-[40px] px-[20px] md:px-[30px] lg:px-[40px] md: rounded-tl-[16px] rounded-tr-[16px]">
-              <ScrollAnimation animateIn="animate__fadeInUp" duration={1}>
+              {/* <ScrollAnimation animateIn="animate__fadeInUp" duration={1}> */}
                 <h3 className="text-[18px] md:text-[24px] lg:text-[32px] mb-[20px] ">
                   Group Savings{" "}
                 </h3>
-              </ScrollAnimation>
-              <ScrollAnimation animateIn="animate__fadeInUp" duration={1}>
+              {/* </ScrollAnimation> */}
+              {/* <ScrollAnimation animateIn="animate__fadeInUp" duration={1}> */}
                 <p className="text-[#5F5F60] mb-[20px] md:mb-[40px]">
                   Save as a group in a transparent, easy to track common space.{" "}
                   <br />
@@ -115,7 +115,7 @@ const Personal = () => {
                   Keep money aside by setting specific goals over a period of
                   time with a set deposit interval with vant.{" "}
                 </p>
-              </ScrollAnimation>
+              {/* </ScrollAnimation> */}
               <img src="/image/bluredimage.png" alt="" className="mx-auto" />
             </div>
           </div>
@@ -213,7 +213,7 @@ const Personal = () => {
               </li>
             </ul>
           </div>
-          <div className="w-full md:w-[50%]">
+          <div className="w-full md:w-[50%] bg-[#f9f9f9] flex justify-center rounded-[16px]">
             {" "}
             <img
               src={
@@ -244,20 +244,28 @@ const Personal = () => {
               freedom.
             </h3>
             <div className="flex justify-center items-center gap-6 mt-[40px]">
-              <img
-                src="./image/googleplay.png"
-                alt="google play logo"
-                className="w-[135px]
-            h-[40px] lg:w-[189px]
-            lg:h-[56px]"
-              />
-              <img
-                src="./image/appstore.png"
-                alt="app store logo"
-                className="w-[120px]
-            h-[40px] lg:w-[168px]
-            lg:h-[56px]"
-              />
+              <a
+                href="https://www.google.com/url?q=https://play.google.com/store/apps/details%3Fid%3Dcom.vant.app%26hl%3Den_US%26referrer%3Dutm_source%253Dgoogle%2526utm_medium%253Dorganic%2526utm_term%253Dvant%2Bapp&sa=U&ved=2ahUKEwixkrSIwpqBAxVgU0EAHVPRDAMQFnoECAUQAg&usg=AOvVaw3iL8zaaBsLYYudFsvEMTLY "
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <img
+                  src="./image/googleplay.png"
+                  alt="google play logo"
+                  className="w-[135px] h-[40px] lg:w-[189px] lg:h-[56px]"
+                />
+              </a>
+              <a
+                href="https://apps.apple.com/ng/app/vant-app/id6464392721"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <img
+                  src="./image/appstore.png"
+                  alt="app store logo"
+                  className="w-[120px] h-[40px] lg:w-[168px] lg:h-[56px]"
+                />
+              </a>
             </div>
           </div>
         </div>

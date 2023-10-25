@@ -12,7 +12,7 @@ const Company = () => {
           Financial Technological solutions.{" "}
         </h2>
 
-        <img src="./image/companycartoon.png" alt="cartoon" className="mx-auto" />
+        <img src="./image/companycartoon.jpg" alt="cartoon" className="mx-auto" />
       </section>
       <section className="px-[16px] md:px-[60px]  lg:px-[120px] py-[24px] grid grid-cols-1 md:grid-cols-2 gap-[40px] md:gap-5 mb-[60px] md:mb-[100px] lg:mb-[120px]">
         <div className="w-full ">
@@ -251,20 +251,28 @@ const Company = () => {
               freedom.
             </h3>
             <div className="flex justify-center items-center gap-6 mt-[40px]">
-              <img
-                src="./image/googleplay.png"
-                alt="google play logo"
-                className="w-[135px]
-            h-[40px] lg:w-[189px]
-            lg:h-[56px]"
-              />
-              <img
-                src="./image/appstore.png"
-                alt="app store logo"
-                className="w-[120px]
-            h-[40px] lg:w-[168px]
-            lg:h-[56px]"
-              />
+              <a
+                href="https://www.google.com/url?q=https://play.google.com/store/apps/details%3Fid%3Dcom.vant.app%26hl%3Den_US%26referrer%3Dutm_source%253Dgoogle%2526utm_medium%253Dorganic%2526utm_term%253Dvant%2Bapp&sa=U&ved=2ahUKEwixkrSIwpqBAxVgU0EAHVPRDAMQFnoECAUQAg&usg=AOvVaw3iL8zaaBsLYYudFsvEMTLY "
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <img
+                  src="./image/googleplay.png"
+                  alt="google play logo"
+                  className="w-[135px] h-[40px] lg:w-[189px] lg:h-[56px]"
+                />
+              </a>
+              <a
+                href="https://apps.apple.com/ng/app/vant-app/id6464392721"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <img
+                  src="./image/appstore.png"
+                  alt="app store logo"
+                  className="w-[120px] h-[40px] lg:w-[168px] lg:h-[56px]"
+                />
+              </a>
             </div>
           </div>
         </div>

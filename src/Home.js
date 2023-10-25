@@ -1,14 +1,14 @@
 import React from "react";
 import Navbar from "./components/navbar";
 import Footer from "./components/Footer";
-import ScrollAnimation from "react-animate-on-scroll";
+// import ScrollAnimation from "react-animate-on-scroll";
 import "./animate.css";
 import { useInView } from "react-intersection-observer";
+import { Link } from "react-router-dom";
 // import gsap from "gsap";
 // import ScrollTrigger from "gsap/ScrollTrigger";
 // import {SplitText} from "../src/SplitText.min.js";
 // import SplitText from "gsap-trial/SplitText"
-
 
 const Progress = ({ number }) => {
   const { ref, inView } = useInView({
@@ -47,12 +47,12 @@ const Home = () => {
   //       quote.anim.progress(1).kill();
   //       quote.split.revert();
   //     }
-  
-  //     quote.split = new SplitText(quote, { 
+
+  //     quote.split = new SplitText(quote, {
   //       type: "lines,words,chars",
   //       linesClass: "split-line"
   //     });
-  
+
   //     // Set up the anim
   //     quote.anim = gsap.from(quote.split.chars, {
   //       scrollTrigger: {
@@ -60,14 +60,14 @@ const Home = () => {
   //         toggleActions: "restart pause resume reverse",
   //         start: "top 50%",
   //       },
-  //       duration: 0.6, 
-  //       ease: "circ.out", 
-  //       y: 80, 
+  //       duration: 0.6,
+  //       ease: "circ.out",
+  //       y: 80,
   //       stagger: 0.02,
   //     });
   //   });
   // }
-  
+
   // ScrollTrigger.addEventListener("refresh", setupSplits);
   // setupSplits();
   return (
@@ -82,7 +82,8 @@ const Home = () => {
         </div>
 
         <h2 className=" animate__slow animate__animated text-[37px] md:text-[56px] lg:text-[80px] text-black text-center font-bold max-w-[996px] mx-auto">
-        Empowering Your Financial <span className="text-[#3B6896]">Freedom</span>
+          Empowering Your Financial{" "}
+          <span className="text-[#3B6896]">Freedom</span>
         </h2>
         <p className="mt-[24px] text-[#878787] max-w-[996px] mx-auto text-center mb-[40px]">
           Try Vant App, a free app that helps you plan and manage your savings
@@ -91,20 +92,32 @@ const Home = () => {
         </p>
 
         <div className="flex justify-center items-center gap-6 mt-[40px]">
-          <img
-            src="./image/googleplay.png"
-            alt="google play logo"
-            className="w-[135px]
+          <a
+            href="https://www.google.com/url?q=https://play.google.com/store/apps/details%3Fid%3Dcom.vant.app%26hl%3Den_US%26referrer%3Dutm_source%253Dgoogle%2526utm_medium%253Dorganic%2526utm_term%253Dvant%2Bapp&sa=U&ved=2ahUKEwixkrSIwpqBAxVgU0EAHVPRDAMQFnoECAUQAg&usg=AOvVaw3iL8zaaBsLYYudFsvEMTLY "
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <img
+              src="./image/googleplay.png"
+              alt="google play logo"
+              className="w-[135px]
             h-[40px] lg:w-[189px]
             lg:h-[56px]"
-          />
-          <img
-            src="./image/appstore.png"
-            alt="app store logo"
-            className="w-[120px]
+            />
+          </a>
+          <a
+            href="https://apps.apple.com/ng/app/vant-app/id6464392721"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <img
+              src="./image/appstore.png"
+              alt="app store logo"
+              className="w-[120px]
             h-[40px] lg:w-[168px]
             lg:h-[56px]"
-          />
+            />
+          </a>
         </div>
         <img
           src="./image/gridtopleft.png"
@@ -196,34 +209,34 @@ const Home = () => {
             duration={1}
           > */}
           <div>
-            <ScrollAnimation
+            {/* <ScrollAnimation
               animateIn="animate__fadeInUp"
               // animateOut="animate__fadeOutRight"
               duration={1}
               className="flex items-center gap-2 mb-[22px]"
-            >
-              <p className="text-[#3B6896] animate__fadeInUp  animate__animated animate__slow font-semibold ">
-                OUR SAVING GOALS
-              </p>{" "}
-              <img src="./image/moneybag.png" alt="" />
-            </ScrollAnimation>
+            > */}
+            <p className="text-[#3B6896] animate__fadeInUp  animate__animated animate__slow font-semibold ">
+              OUR SAVING GOALS
+            </p>{" "}
+            <img src="./image/moneybag.png" alt="" />
+            {/* </ScrollAnimation> */}
           </div>
-          <ScrollAnimation
+          {/* <ScrollAnimation
             animateIn="animate__fadeInUp"
             // animateOut="animate__fadeOutRight"
             duration={1}
-          >
-            <h2 className="   animate__animated animate__slow animate__fadeInUp text-[20px] md:text-[28px] lg:text-[40px] md:mb-[28px] mb-[16px] font-medium">
-              Do you want to save money for your future goals?
-            </h2>
-          </ScrollAnimation>
-          <ScrollAnimation animateIn="animate__fadeInUp" duration={1}>
-            <p className="text-[16px] md:text-[18px]  md:mb-[28px] mb-[16px]">
-              Whether you sleep or not, the day will dawn. Whether you prepare
-              for the future or not, it doesn’t prevent the future from
-              evolving. Get intentional about your finances.
-            </p>
-          </ScrollAnimation>
+          > */}
+          <h2 className="   animate__animated animate__slow animate__fadeInUp text-[20px] md:text-[28px] lg:text-[40px] md:mb-[28px] mb-[16px] font-medium">
+            Do you want to save money for your future goals?
+          </h2>
+          {/* </ScrollAnimation> */}
+          {/* <ScrollAnimation animateIn="animate__fadeInUp" duration={1}> */}
+          <p className="text-[16px] md:text-[18px]  md:mb-[28px] mb-[16px]">
+            Whether you sleep or not, the day will dawn. Whether you prepare for
+            the future or not, it doesn’t prevent the future from evolving. Get
+            intentional about your finances.
+          </p>
+          {/* </ScrollAnimation> */}
           <ul className="hidden md:flex flex-col gap-[16px] md:gap-[32px] md:mb-[28px] mb-[16px]">
             <li className="flex items-center gap-3 text-[#5F5F60]">
               <img src="./image/routing.png" alt="" />
@@ -242,9 +255,11 @@ const Home = () => {
               <p>Save for health insurance</p>
             </li>
           </ul>
-          <button className="flex items-center gap-2 text-[#3B6896] hover:text-[#3b6896d2]">
-            <p>Learn More</p> <img src="./image/arrowright.png" alt="" />
-          </button>
+          <Link to="/personal">
+            <button className="flex items-center gap-2 text-[#3B6896] hover:text-[#3b6896d2]">
+              <p>Learn More</p> <img src="./image/arrowright.png" alt="" />
+            </button>
+          </Link>
           {/* </ScrollAnimation> */}
         </div>
       </section>
@@ -260,21 +275,21 @@ const Home = () => {
             // animateOut="animate__fadeOutRight"
             duration={1}
           > */}
-            <h3 className="text-[20px] md:text-[28px] lg:text-[40px] md:mb-[28px] mb-[16px] font-medium">
-              All-in-one Investment solutions
-            </h3>{" "}
+          <h3 className="text-[20px] md:text-[28px] lg:text-[40px] md:mb-[28px] mb-[16px] font-medium">
+            All-in-one Investment solutions
+          </h3>{" "}
           {/* </ScrollAnimation> */}
           {/* <ScrollAnimation
             animateIn="animate__fadeInUp"
             // animateOut="animate__fadeOutRight"
             duration={1}
           > */}
-            <p className="text-[16px] md:text-[18px]  md:mb-[28px] mb-[16px]">
-              We have tailored our investment plans to suit anybody. Earn 5%-13%
-              P.A when you invest with any of these Vant app investment plans.
-              Not just that, we also have HNI plans for high net worth investors
-              willing to pursue a custom investment.
-            </p>
+          <p className="text-[16px] md:text-[18px]  md:mb-[28px] mb-[16px]">
+            We have tailored our investment plans to suit anybody. Earn 5%-13%
+            P.A when you invest with any of these Vant app investment plans. Not
+            just that, we also have HNI plans for high net worth investors
+            willing to pursue a custom investment.
+          </p>
           {/* </ScrollAnimation> */}
         </div>
 
@@ -292,20 +307,19 @@ const Home = () => {
               // animateOut="animate__fadeOutRight"
               duration={1}
             > */}
-              <h3 className="text-[18px] md:text-[24px] mb-[20px] ">
-                Deluxe investment Plan
-              </h3>{" "}
+            <h3 className="text-[18px] md:text-[24px] mb-[20px] ">
+              Deluxe investment Plan
+            </h3>{" "}
             {/* </ScrollAnimation> */}
             {/* <ScrollAnimation
               animateIn="animate__fadeInUp"
               // animateOut="animate__fadeOutRight"
               duration={1}
             > */}
-              <p className="text-[#5F5F60]">
-                With the deluxe plan, you can earn up to 5% P.A with a minimum
-                of 1 unit. You will have access to make withdrawals after 1
-                month.
-              </p>
+            <p className="text-[#5F5F60]">
+              With the deluxe plan, you can earn up to 5% P.A with a minimum of
+              1 unit. You will have access to make withdrawals after 1 month.
+            </p>
             {/* </ScrollAnimation> */}
           </div>
           <div className="w-full md:w-[50%]">
@@ -322,19 +336,19 @@ const Home = () => {
               // animateOut="animate__fadeOutRight"
               duration={1}
             > */}
-              <h3 className="text-[18px] md:text-[24px] mb-[20px] ">
-                Grow investment Plan{" "}
-              </h3>
+            <h3 className="text-[18px] md:text-[24px] mb-[20px] ">
+              Grow investment Plan{" "}
+            </h3>
             {/* </ScrollAnimation> */}
             {/* <ScrollAnimation
               animateIn="animate__fadeInUp"
               // animateOut="animate__fadeOutRight"
               duration={1}
             > */}
-              <p className="text-[#5F5F60]">
-                With the grow plan, you can earn up to 10% P.A with a minimum of
-                3 unit. You will have access to make withdrawals after 3 months.
-              </p>
+            <p className="text-[#5F5F60]">
+              With the grow plan, you can earn up to 10% P.A with a minimum of 3
+              unit. You will have access to make withdrawals after 3 months.
+            </p>
             {/* </ScrollAnimation> */}
           </div>
         </div>
@@ -352,20 +366,19 @@ const Home = () => {
               // animateOut="animate__fadeOutRight"
               duration={1}
             > */}
-              <h3 className="text-[18px] md:text-[24px] mb-[20px] ">
-                Surge investment Plan{" "}
-              </h3>
+            <h3 className="text-[18px] md:text-[24px] mb-[20px] ">
+              Surge investment Plan{" "}
+            </h3>
             {/* </ScrollAnimation> */}
             {/* <ScrollAnimation
               animateIn="animate__fadeInUp"
               // animateOut="animate__fadeOutRight"
               duration={1}
             > */}
-              <p className="text-[#5F5F60]">
-                With the surge plan, you can earn up to 13% P.A with a minimum
-                of 5 unit. You will have access to make withdrawals after 6
-                months.
-              </p>
+            <p className="text-[#5F5F60]">
+              With the surge plan, you can earn up to 13% P.A with a minimum of
+              5 unit. You will have access to make withdrawals after 6 months.
+            </p>
             {/* </ScrollAnimation> */}
           </div>
           <div className="w-full md:w-[50%]">
@@ -381,28 +394,30 @@ const Home = () => {
               // animateOut="animate__fadeOutRight"
               duration={1}
             > */}
-              <h3 className="text-[18px] md:text-[24px] mb-[20px] ">
-                HNI investment Plan
-              </h3>
+            <h3 className="text-[18px] md:text-[24px] mb-[20px] ">
+              HNI investment Plan
+            </h3>
             {/* </ScrollAnimation> */}
             {/* <ScrollAnimation
               animateIn="animate__fadeInUp"
               // animateOut="animate__fadeOutRight"
               duration={1}
             > */}
-              <p className="text-[#5F5F60]">
-                With the HNI investment plan, you can customize the plan to suit
-                your finances with risk appetite most convenient to you. Sounds
-                cool, right?
-              </p>
+            <p className="text-[#5F5F60]">
+              With the HNI investment plan, you can customize the plan to suit
+              your finances with risk appetite most convenient to you. Sounds
+              cool, right?
+            </p>
             {/* </ScrollAnimation> */}
           </div>
         </div>
         <div className="w-full mt-[32px]">
-          <button className="flex items-center text-[#3B6896] gap-2 mx-auto hover:text-[#3b6896d2]">
-            Learn more about our investments{" "}
-            <img src="./image/arrowright.png" alt="" />
-          </button>
+          <Link to="/product">
+            <button className="flex items-center text-[#3B6896] gap-2 mx-auto hover:text-[#3b6896d2]">
+              Learn more about our investments{" "}
+              <img src="./image/arrowright.png" alt="" />
+            </button>
+          </Link>
         </div>
       </section>
 
@@ -779,10 +794,12 @@ const Home = () => {
               </p>
             </div>
           </div>
-          <button className="flex items-center text-[#3B6896] gap-2 ">
-            See more FAQs
-            <img src="./image/arrowright.png" alt="" />
-          </button>
+          <Link to="/faq">
+            <button className="flex items-center text-[#3B6896] gap-2 ">
+              See more FAQs
+              <img src="./image/arrowright.png" alt="" />
+            </button>
+          </Link>
         </div>
       </section>
       <section className="px-[16px] md:px-[60px]  lg:px-[120px] mb-[60px] md:mb-[80px] lg:mb-[120px]">
@@ -796,20 +813,28 @@ const Home = () => {
               freedom.
             </h3>
             <div className="flex justify-center items-center gap-6 mt-[40px]">
-              <img
-                src="./image/googleplay.png"
-                alt="google play logo"
-                className="w-[135px]
-            h-[40px] lg:w-[189px]
-            lg:h-[56px]"
-              />
-              <img
-                src="./image/appstore.png"
-                alt="app store logo"
-                className="w-[120px]
-            h-[40px] lg:w-[168px]
-            lg:h-[56px]"
-              />
+              <a
+                href="https://www.google.com/url?q=https://play.google.com/store/apps/details%3Fid%3Dcom.vant.app%26hl%3Den_US%26referrer%3Dutm_source%253Dgoogle%2526utm_medium%253Dorganic%2526utm_term%253Dvant%2Bapp&sa=U&ved=2ahUKEwixkrSIwpqBAxVgU0EAHVPRDAMQFnoECAUQAg&usg=AOvVaw3iL8zaaBsLYYudFsvEMTLY "
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <img
+                  src="./image/googleplay.png"
+                  alt="google play logo"
+                  className="w-[135px] h-[40px] lg:w-[189px] lg:h-[56px]"
+                />
+              </a>
+              <a
+                href="https://apps.apple.com/ng/app/vant-app/id6464392721"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <img
+                  src="./image/appstore.png"
+                  alt="app store logo"
+                  className="w-[120px] h-[40px] lg:w-[168px] lg:h-[56px]"
+                />
+              </a>
             </div>
           </div>
         </div>

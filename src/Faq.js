@@ -139,7 +139,7 @@ With Vant you get you save into your savings pocket through card or bank transfe
           )}
         </div>
         <div className="py-7  border-b ">
-          <div onClick={handleFaq5} className=" flex justify-between items-center mb-2">
+          <div onClick={handleFaq5} className="cursor-pointer flex justify-between items-center mb-2">
             <p className="text-grey-600 font-bold text-lg">
             Can I set specific savings goals with Vant?
             </p>{" "}
@@ -174,20 +174,28 @@ With Vant you get you save into your savings pocket through card or bank transfe
               freedom.
             </h3>
             <div className="flex justify-center items-center gap-6 mt-[40px]">
-              <img
-                src="./image/googleplay.png"
-                alt="google play logo"
-                className="w-[135px]
-            h-[40px] lg:w-[189px]
-            lg:h-[56px]"
-              />
-              <img
-                src="./image/appstore.png"
-                alt="app store logo"
-                className="w-[120px]
-            h-[40px] lg:w-[168px]
-            lg:h-[56px]"
-              />
+              <a
+                href="https://www.google.com/url?q=https://play.google.com/store/apps/details%3Fid%3Dcom.vant.app%26hl%3Den_US%26referrer%3Dutm_source%253Dgoogle%2526utm_medium%253Dorganic%2526utm_term%253Dvant%2Bapp&sa=U&ved=2ahUKEwixkrSIwpqBAxVgU0EAHVPRDAMQFnoECAUQAg&usg=AOvVaw3iL8zaaBsLYYudFsvEMTLY "
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <img
+                  src="./image/googleplay.png"
+                  alt="google play logo"
+                  className="w-[135px] h-[40px] lg:w-[189px] lg:h-[56px]"
+                />
+              </a>
+              <a
+                href="https://apps.apple.com/ng/app/vant-app/id6464392721"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <img
+                  src="./image/appstore.png"
+                  alt="app store logo"
+                  className="w-[120px] h-[40px] lg:w-[168px] lg:h-[56px]"
+                />
+              </a>
             </div>
           </div>
         </div>

@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (
@@ -12,25 +13,25 @@ const Footer = () => {
         <div className="flex justify-between">
           <div className="flex flex-wrap gap-[50px] justify-between w-[80%] md:w-full">
             <div>
-              <h3 className="text-[18px] md:text-[20px] lg:text-[24px] font-semibold mb-[30px] md-[40px]">
+              <h3 className="text-[16px] md:text-[18px] font-semibold mb-[30px] md-[40px]">
                 Company
               </h3>{" "}
-              <ul className="flex flex-col gap-[16px] md:gap-[24px]">
-                <li className="text-[18px] md:text-[20px] lg:text-[24px] text-[#373738]">
-                  About us
-                </li>
-                <li className="text-[18px] md:text-[20px] lg:text-[24px] text-[#373738]">
-                  Contact us
-                </li>
-                <li className="text-[18px] md:text-[20px] lg:text-[24px] text-[#373738]">
-                  Blog
-                </li>
-                <li className="text-[18px] md:text-[20px] lg:text-[24px] text-[#373738]">
-                  FAQs
-                </li>
+              <ul className="flex flex-col gap-[16px] md:gap-[24px] text-[14px] md:text-[16px]">
+                <Link className="cursor-pointer" to="/company">
+                  <li className=" text-[#373738]">About us</li>
+                </Link>
+                <a href="mailto: support@vantapp.com">
+                  <li className=" text-[#373738]">Contact us</li>
+                </a>
+                <Link className="cursor-pointer" to="/blog">
+                  <li className=" text-[#373738]">Blog</li>
+                </Link>
+                <Link to="/faq">
+                  <li className=" text-[#373738]">FAQs</li>
+                </Link>
               </ul>
             </div>
-            <div>
+            {/* <div>
               <h3 className="text-[18px] md:text-[20px] lg:text-[24px] font-semibold mb-[30px] md-[40px]">
                 Business
               </h3>{" "}
@@ -45,59 +46,85 @@ const Footer = () => {
                   Mgt Tools{" "}
                 </li>
               </ul>
-            </div>
+            </div> */}
             <div>
-              <h3 className="text-[18px] md:text-[20px] lg:text-[24px] font-semibold mb-[30px] md-[40px]">
+              <h3 className="text-[16px] md:text-[18px] font-semibold mb-[30px] md-[40px]">
                 Developers{" "}
               </h3>{" "}
-              <ul className="flex flex-col gap-[16px] md:gap-[24px]">
-                <li className="text-[18px] md:text-[20px] lg:text-[24px] text-[#373738]">
-                  API Doc{" "}
-                </li>
-                <li className="text-[18px] md:text-[20px] lg:text-[24px] text-[#373738]">
-                  Integrations{" "}
-                </li>
-                <li className="text-[18px] md:text-[20px] lg:text-[24px] text-[#373738]">
-                  Status
-                </li>
+              <ul className="flex flex-col gap-[16px] md:gap-[24px] text-[14px] md:text-[16px] ">
+                <li className=" text-[#373738]">API Doc </li>
+                <li className=" text-[#373738]">Integrations </li>
+                <li className=" text-[#373738]">Status</li>
               </ul>
             </div>
             <div>
-              <h3 className="text-[18px] md:text-[20px] lg:text-[24px] font-semibold mb-[30px] md-[40px]">
+              <h3 className="text-[16px] md:text-[18px] font-semibold mb-[30px] md-[40px]">
                 Legal
               </h3>{" "}
               <ul className="flex flex-col gap-[16px] md:gap-[24px]">
-                <li className="text-[18px] md:text-[20px] lg:text-[24px] text-[#373738]">
-                  Terms of Service{" "}
-                </li>
-                <li className="text-[18px] md:text-[20px] lg:text-[24px] text-[#373738]">
-                  Privacy Policy{" "}
-                </li>
-                <li className="text-[18px] md:text-[20px] lg:text-[24px] text-[#373738]">
-                  Security
-                </li>
+                <Link className="cursor-pointer" to="/terms">
+                  <li className=" text-[#373738]">Terms of Service </li>
+                </Link>
+                <Link className="cursor-pointer" to="privacy">
+                  <li className=" text-[#373738]">Privacy Policy </li>
+                </Link>
+                <li className=" text-[#373738]">Security</li>
               </ul>
             </div>
           </div>
           <div className="gap-4 items-center md:hidden flex flex-col">
-            <img src="/image/linkedin.png" alt="" />
-            <img src="/image/x.png" alt="" />
-            <img src="/image/insta.png" alt="" />
+            <Link
+              to="https://www.linkedin.com/company/vantafrica"               target="_blank"
+
+              rel="noreferrer"
+            >
+              <img src="/image/linkedin.png" alt="" className="h-[24px]" />
+            </Link>
+            <Link to="https://x.com/vantappafrica?s=21" rel="noreferrer"               target="_blank"
+>
+              <img src="/image/x.png" alt="" className="h-[24px]" />
+            </Link>
+            <Link
+              to="https://instagram.com/vantappafrica?igshid=MzRIODBiNWFIZA=="
+              rel="noreferrer"
+              target="_blank"
+
+            >
+              <img src="/image/insta.png" alt="" className="h-[24px]" />
+            </Link>
           </div>
         </div>
 
         <div className="flex justify-between">
-          <p className="mt-[40px] text-[12px] md:text-[14px] lg:text-[16px]">
+          <p className="mt-[40px] text-[12px] ">
             ©2023. Advant Capitol. All rights reserved
           </p>
           <div className="gap-4 items-center hidden md:flex">
-            <img src="/image/linkedin.png" alt="" />
-            <img src="/image/x.png" alt="" />
-            <img src="/image/insta.png" alt="" />
+            <Link
+              to="https://www.linkedin.com/company/vantafrica"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <img src="/image/linkedin.png" alt="" />
+            </Link>
+            <Link
+              to="https://www.linkedin.com/company/vantafrica"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <img src="/image/x.png" alt="" />
+            </Link>
+            <Link
+              to="https://www.linkedin.com/company/vantafrica"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <img src="/image/insta.png" alt="" />
+            </Link>
           </div>
         </div>
       </div>
-      <p className="pb-[40px] text-[12px] md:text-[14px] lg:text-[16px]">
+      <p className="pb-[40px] text-[12px]">
         Advant Capitol is a financial technology company that is duly registered
         with the Corporate Affairs Commission of Nigeria (RC: 1750394). Our
         office is located at 39 Govt Building, Isale Igbehin, Abeokuta, Ogun.

@@ -26,10 +26,10 @@ const Navbar = () => {
             ></img>
           </Link>
           <div className="hidden md:block">
-            <ul className="text-base flex md:gap-[28px] lg:gap-[38px] items-center text-[#989898] md:px-[28px] lg:px-[38px] py-[18px] rounded-[40px] bg-[#FAFAFA]">
+            <ul className="text-base flex md:gap-[28px] lg:gap-[38px] items-center text-[#989898] md:px-[28px] lg:px-[38px] py-[10px] lg:py-[18px] rounded-[40px] bg-[#FAFAFA]">
               <Link to="/personal">
                 <li
-                  className={`${
+                  className={`hover:text-blue-500 ${
                     location.pathname === "/personal" ? "text-blue-500" : ""
                   }`}
                 >
@@ -38,7 +38,7 @@ const Navbar = () => {
               </Link>
               <Link to="/product">
                 <li
-                  className={`${
+                  className={`hover:text-blue-500 ${
                     location.pathname === "/product" ? "text-blue-500" : ""
                   }`}
                 >
@@ -47,7 +47,7 @@ const Navbar = () => {
               </Link>
               <Link to="/company">
                 <li
-                  className={`${
+                  className={`hover:text-blue-500 ${
                     location.pathname === "/company" ? "text-blue-500" : ""
                   }`}
                 >
@@ -56,7 +56,7 @@ const Navbar = () => {
               </Link>
               <Link to="">
                 <li
-                  className={`${
+                  className={`hover:text-blue-500 ${
                     location.pathname === "/developer" ? "text-blue-500" : ""
                   }`}
                 >
@@ -74,37 +74,43 @@ const Navbar = () => {
               </Link> */}
             </ul>
           </div>
-          <button className="text-base hidden  xl:flex gap-[8px] items-center hover:bg-slate-100 text-[#3B6896] px-[28px] py-[18px] rounded-[40px] border border-[#3B6896] ">
-            <div>
-              <svg
-                width="20"
-                height="20"
-                viewBox="0 0 20 20"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M17.043 6.5233C16.961 6.57464 15.009 7.65797 15.009 10.06C15.101 12.7993 17.4723 13.76 17.513 13.76C17.4723 13.8113 17.155 15.0686 16.215 16.3866C15.469 17.522 14.641 18.6666 13.3836 18.6666C12.1876 18.6666 11.7583 17.91 10.3783 17.91C8.89629 17.91 8.47696 18.6666 7.34229 18.6666C6.08496 18.6666 5.19562 17.4606 4.40896 16.336C3.38696 14.864 2.51829 12.554 2.48762 10.336C2.46696 9.16064 2.69229 8.0053 3.26429 7.02397C4.07162 5.65397 5.51296 4.72397 7.08696 4.6933C8.29296 4.65264 9.36629 5.5213 10.1023 5.5213C10.8076 5.5213 12.1263 4.6933 13.6183 4.6933C14.2623 4.69397 15.9796 4.88797 17.043 6.5233ZM10.0003 4.45864C9.78562 3.3853 10.3783 2.31197 10.9303 1.6273C11.6356 0.799305 12.7496 0.237305 13.7103 0.237305C13.7716 1.31064 13.383 2.3633 12.6883 3.12997C12.065 3.95797 10.9916 4.5813 10.0003 4.45864Z"
-                  fill="#3B6896"
-                />
-              </svg>
-            </div>
-            <div>
-              <svg
-                width="20"
-                height="20"
-                viewBox="0 0 20 20"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M5.08203 2.14062L12 9.05729L13.7852 7.27213C11.3458 5.79214 8.07871 3.80673 6.60937 2.91406L5.625 2.31771C5.451 2.21171 5.2647 2.15462 5.08203 2.14062ZM4.02604 2.96875C4.01204 3.04475 4 3.12112 4 3.20312V16.8724C4 16.9297 4.01153 16.9831 4.01953 17.0378L11.0573 10L4.02604 2.96875ZM14.9583 7.98437L12.9427 10L14.9232 11.9805C15.9725 11.3445 16.6993 10.9028 16.7799 10.8542C17.1366 10.6362 17.338 10.3072 17.332 9.94792C17.3267 9.59525 17.1252 9.27994 16.7825 9.08594C16.7059 9.04194 15.989 8.60904 14.9583 7.98437ZM12 10.9427L5.10286 17.8398C5.23686 17.8165 5.3707 17.7765 5.4987 17.6992C5.67603 17.5912 10.4667 14.6847 13.75 12.6927L12 10.9427Z"
-                  fill="#3B6896"
-                />
-              </svg>
-            </div>
-            <p>Download our App</p>
-          </button>
+          <a
+            href="https://www.google.com/url?q=https://play.google.com/store/apps/details%3Fid%3Dcom.vant.app%26hl%3Den_US%26referrer%3Dutm_source%253Dgoogle%2526utm_medium%253Dorganic%2526utm_term%253Dvant%2Bapp&sa=U&ved=2ahUKEwixkrSIwpqBAxVgU0EAHVPRDAMQFnoECAUQAg&usg=AOvVaw3iL8zaaBsLYYudFsvEMTLY "
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <button className="text-base hidden  xl:flex gap-[8px] items-center hover:bg-slate-100 text-[#3B6896] px-[28px] py-[18px] rounded-[40px] border border-[#3B6896] ">
+              <div>
+                <svg
+                  width="20"
+                  height="20"
+                  viewBox="0 0 20 20"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M17.043 6.5233C16.961 6.57464 15.009 7.65797 15.009 10.06C15.101 12.7993 17.4723 13.76 17.513 13.76C17.4723 13.8113 17.155 15.0686 16.215 16.3866C15.469 17.522 14.641 18.6666 13.3836 18.6666C12.1876 18.6666 11.7583 17.91 10.3783 17.91C8.89629 17.91 8.47696 18.6666 7.34229 18.6666C6.08496 18.6666 5.19562 17.4606 4.40896 16.336C3.38696 14.864 2.51829 12.554 2.48762 10.336C2.46696 9.16064 2.69229 8.0053 3.26429 7.02397C4.07162 5.65397 5.51296 4.72397 7.08696 4.6933C8.29296 4.65264 9.36629 5.5213 10.1023 5.5213C10.8076 5.5213 12.1263 4.6933 13.6183 4.6933C14.2623 4.69397 15.9796 4.88797 17.043 6.5233ZM10.0003 4.45864C9.78562 3.3853 10.3783 2.31197 10.9303 1.6273C11.6356 0.799305 12.7496 0.237305 13.7103 0.237305C13.7716 1.31064 13.383 2.3633 12.6883 3.12997C12.065 3.95797 10.9916 4.5813 10.0003 4.45864Z"
+                    fill="#3B6896"
+                  />
+                </svg>
+              </div>
+              <div>
+                <svg
+                  width="20"
+                  height="20"
+                  viewBox="0 0 20 20"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M5.08203 2.14062L12 9.05729L13.7852 7.27213C11.3458 5.79214 8.07871 3.80673 6.60937 2.91406L5.625 2.31771C5.451 2.21171 5.2647 2.15462 5.08203 2.14062ZM4.02604 2.96875C4.01204 3.04475 4 3.12112 4 3.20312V16.8724C4 16.9297 4.01153 16.9831 4.01953 17.0378L11.0573 10L4.02604 2.96875ZM14.9583 7.98437L12.9427 10L14.9232 11.9805C15.9725 11.3445 16.6993 10.9028 16.7799 10.8542C17.1366 10.6362 17.338 10.3072 17.332 9.94792C17.3267 9.59525 17.1252 9.27994 16.7825 9.08594C16.7059 9.04194 15.989 8.60904 14.9583 7.98437ZM12 10.9427L5.10286 17.8398C5.23686 17.8165 5.3707 17.7765 5.4987 17.6992C5.67603 17.5912 10.4667 14.6847 13.75 12.6927L12 10.9427Z"
+                    fill="#3B6896"
+                  />
+                </svg>
+              </div>
+              <p>Download our App</p>
+            </button>
+          </a>
           <button onClick={handleToggle} className="md:hidden md:inline-block">
             {toggle ? <GiHamburgerMenu /> : <AiOutlineClose />}
           </button>
@@ -149,22 +155,37 @@ const Navbar = () => {
                 Business
               </li>
             </Link> */}
-            <li> <div className="flex justify-center items-center gap-6 mt-[40px]">
-              <img
-                src="./image/googleplay.png"
-                alt="google play logo"
-                className="w-[135px]
+            <li>
+              {" "}
+              <div className="flex justify-center items-center gap-6 mt-[40px]">
+                <a
+                  href="https://www.google.com/url?q=https://play.google.com/store/apps/details%3Fid%3Dcom.vant.app%26hl%3Den_US%26referrer%3Dutm_source%253Dgoogle%2526utm_medium%253Dorganic%2526utm_term%253Dvant%2Bapp&sa=U&ved=2ahUKEwixkrSIwpqBAxVgU0EAHVPRDAMQFnoECAUQAg&usg=AOvVaw3iL8zaaBsLYYudFsvEMTLY "
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <img
+                    src="./image/googleplay.png"
+                    alt="google play logo"
+                    className="w-[135px]
             h-[40px] lg:w-[189px]
             lg:h-[56px]"
-              />
-              <img
-                src="./image/appstore.png"
-                alt="app store logo"
-                className="w-[120px]
+                  />
+                </a>
+                <a
+                  href="https://apps.apple.com/ng/app/vant-app/id6464392721"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <img
+                    src="./image/appstore.png"
+                    alt="app store logo"
+                    className="w-[120px]
             h-[40px] lg:w-[168px]
             lg:h-[56px]"
-              />
-            </div></li>
+                  />
+                </a>
+              </div>
+            </li>
           </ul>
         </m.div>
       )}

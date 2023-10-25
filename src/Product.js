@@ -1,7 +1,7 @@
 import React from "react";
 import Navbar from "./components/navbar";
 import Footer from "./components/Footer";
-import ScrollAnimation from "react-animate-on-scroll";
+// import ScrollAnimation from "react-animate-on-scroll";
 import "./animate.css";
 
 const Product = () => {
@@ -87,24 +87,24 @@ const Product = () => {
                 className="mx-auto h-[350px] md:h-[440px]"
               />
             </div>
-            <ScrollAnimation
+            {/* <ScrollAnimation
               animateIn="animate__fadeInUp"
               duration={1}
-            >
+            > */}
               <h3 className="text-[18px] md:text-[24px] mb-[20px] ">
                 Deluxe investment Plan
               </h3>{" "}
-            </ScrollAnimation>
-            <ScrollAnimation
+            {/* </ScrollAnimation> */}
+            {/* <ScrollAnimation
               animateIn="animate__fadeInUp"
               duration={1}
-            >
+            > */}
               <p className="text-[#5F5F60]">
                 With the deluxe plan, you can earn up to 5% P.A with a minimum
                 of 1 unit. You will have access to make withdrawals after 1
                 month.
               </p>
-            </ScrollAnimation>
+            {/* </ScrollAnimation> */}
           </div>
           <div className="w-full md:w-[50%]">
             <div className="bg-[#f9f9f9] pt-[80px] rounded-tl-[16px] rounded-tr-[16px]">
@@ -114,23 +114,23 @@ const Product = () => {
                 className="mx-auto h-[350px] md:h-[440px]"
               />
             </div>
-            <ScrollAnimation
+            {/* <ScrollAnimation
               animateIn="animate__fadeInUp"
               duration={1}
-            >
+            > */}
               <h3 className="text-[18px] md:text-[24px] mb-[20px] ">
                 Grow investment Plan{" "}
               </h3>
-            </ScrollAnimation>
-            <ScrollAnimation
+            {/* </ScrollAnimation> */}
+            {/* <ScrollAnimation
               animateIn="animate__fadeInUp"
               duration={1}
-            >
+            > */}
               <p className="text-[#5F5F60]">
                 With the grow plan, you can earn up to 10% P.A with a minimum of
                 3 unit. You will have access to make withdrawals after 3 months.
               </p>
-            </ScrollAnimation>
+            {/* </ScrollAnimation> */}
           </div>
         </div>
         <div className="flex items-center flex-col md:flex-row gap-[50px] mt-[20px]">
@@ -142,24 +142,24 @@ const Product = () => {
                 className="mx-auto h-[350px] md:h-[440px]"
               />
             </div>
-            <ScrollAnimation
+            {/* <ScrollAnimation
               animateIn="animate__fadeInUp"
               duration={1}
-            >
+            > */}
               <h3 className="text-[18px] md:text-[24px] mb-[20px] ">
                 Surge investment Plan{" "}
               </h3>
-            </ScrollAnimation>
-            <ScrollAnimation
+            {/* </ScrollAnimation> */}
+            {/* <ScrollAnimation
               animateIn="animate__fadeInUp"
               duration={1}
-            >
+            > */}
               <p className="text-[#5F5F60]">
                 With the surge plan, you can earn up to 13% P.A with a minimum
                 of 5 unit. You will have access to make withdrawals after 6
                 months.
               </p>
-            </ScrollAnimation>
+            {/* </ScrollAnimation> */}
           </div>
           <div className="w-full md:w-[50%]">
             <div className="bg-[#f9f9f9] pt-[80px] rounded-tl-[16px] rounded-tr-[16px]">
@@ -169,24 +169,24 @@ const Product = () => {
                 className="mx-auto h-[350px] md:h-[440px]"
               />
             </div>
-            <ScrollAnimation
+            {/* <ScrollAnimation
               animateIn="animate__fadeInUp"
               duration={1}
-            >
+            > */}
               <h3 className="text-[18px] md:text-[24px] mb-[20px] ">
                 HNI investment Plan
               </h3>
-            </ScrollAnimation>
-            <ScrollAnimation
+            {/* </ScrollAnimation> */}
+            {/* <ScrollAnimation
               animateIn="animate__fadeInUp"
               duration={1}
-            >
+            > */}
               <p className="text-[#5F5F60]">
                 With the HNI investment plan, you can customize the plan to suit
                 your finances with risk appetite most convenient to you. Sounds
                 cool, right?
               </p>
-            </ScrollAnimation>
+            {/* </ScrollAnimation> */}
           </div>
         </div>
       </section>
@@ -203,34 +203,29 @@ const Product = () => {
         <div className="w-full md:w-[50%] md:pl-[20px] lg:pl-[40px]">
          
           <div>
-            <ScrollAnimation
-              animateIn="animate__fadeInUp"
-              // animateOut="animate__fadeOutRight"
-              duration={1}
-              className="flex items-center gap-2 mb-[22px]"
-            >
+            
               <p className="text-[#3B6896] animate__fadeInUp  animate__animated animate__slow font-semibold ">
                 VANT PAY OFF DEBTS
               </p>{" "}
               <img src="./image/moneybag.png" alt="" />
-            </ScrollAnimation>
+           
           </div>
-          <ScrollAnimation
+          {/* <ScrollAnimation
             animateIn="animate__fadeInUp"
             // animateOut="animate__fadeOutRight"
             duration={1}
-          >
+          > */}
             <h2 className="   animate__animated animate__slow animate__fadeInUp text-[20px] md:text-[28px] lg:text-[35px] md:mb-[28px] mb-[16px] tracking-tighter font-medium">
               Improve your financial welfare by saving to clear off debts.{" "}
             </h2>
-          </ScrollAnimation>
-          <ScrollAnimation animateIn="animate__fadeInUp" duration={1}>
+          {/* </ScrollAnimation> */}
+          {/* <ScrollAnimation animateIn="animate__fadeInUp" duration={1}> */}
             <p className="text-[16px] md:text-[18px]  md:mb-[28px] mb-[16px]">
               This feature promotes a long-term financial health. By reducing
               debts and building savings simultaneously, individuals can achieve
               a more secure and stable financial future.
             </p>
-          </ScrollAnimation>
+          {/* </ScrollAnimation> */}
           <ul className="hidden md:flex flex-col gap-[16px] md:gap-[32px] md:mb-[28px] mb-[16px]">
             <li className="flex items-center gap-3 text-[#5F5F60]">
               <img src="./image/transaction.png" alt="" />
@@ -436,20 +431,28 @@ const Product = () => {
               freedom.
             </h3>
             <div className="flex justify-center items-center gap-6 mt-[40px]">
-              <img
-                src="./image/googleplay.png"
-                alt="google play logo"
-                className="w-[135px]
-            h-[40px] lg:w-[189px]
-            lg:h-[56px]"
-              />
-              <img
-                src="./image/appstore.png"
-                alt="app store logo"
-                className="w-[120px]
-            h-[40px] lg:w-[168px]
-            lg:h-[56px]"
-              />
+              <a
+                href="https://www.google.com/url?q=https://play.google.com/store/apps/details%3Fid%3Dcom.vant.app%26hl%3Den_US%26referrer%3Dutm_source%253Dgoogle%2526utm_medium%253Dorganic%2526utm_term%253Dvant%2Bapp&sa=U&ved=2ahUKEwixkrSIwpqBAxVgU0EAHVPRDAMQFnoECAUQAg&usg=AOvVaw3iL8zaaBsLYYudFsvEMTLY "
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <img
+                  src="./image/googleplay.png"
+                  alt="google play logo"
+                  className="w-[135px] h-[40px] lg:w-[189px] lg:h-[56px]"
+                />
+              </a>
+              <a
+                href="https://apps.apple.com/ng/app/vant-app/id6464392721"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <img
+                  src="./image/appstore.png"
+                  alt="app store logo"
+                  className="w-[120px] h-[40px] lg:w-[168px] lg:h-[56px]"
+                />
+              </a>
             </div>
           </div>
         </div>
