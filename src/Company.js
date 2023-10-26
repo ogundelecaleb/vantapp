@@ -166,7 +166,7 @@ const Company = () => {
             </p>
           </div>
           <div>
-            <img src="./image/joystick.png" alt="equalizer" />
+            <img src="./image/Joystick.png" alt="equalizer" />
             <h3 className="text-[18px] md:text-[20px] lg:text-[24px] md:mb-[28px] mb-[16px] font-medium">
               Drive Financial Inclusion
             </h3>

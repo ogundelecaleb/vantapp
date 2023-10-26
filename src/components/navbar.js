@@ -75,7 +75,7 @@ const Navbar = () => {
             </ul>
           </div>
           <a
-            href="https://www.google.com/url?q=https://play.google.com/store/apps/details%3Fid%3Dcom.vant.app%26hl%3Den_US%26referrer%3Dutm_source%253Dgoogle%2526utm_medium%253Dorganic%2526utm_term%253Dvant%2Bapp&sa=U&ved=2ahUKEwixkrSIwpqBAxVgU0EAHVPRDAMQFnoECAUQAg&usg=AOvVaw3iL8zaaBsLYYudFsvEMTLY "
+            href="https://www.linktree/vantapp"
             target="_blank"
             rel="noopener noreferrer"
           >
