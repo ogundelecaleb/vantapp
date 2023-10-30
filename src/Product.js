@@ -268,12 +268,7 @@ const Product = () => {
                   benefits, and you shouldn't deny your future the benefits of a
                   healthy, and comfortable financial stability in your mid or
                   golden years.
-                  <br /> <br />
-                  As a freelancer or business owner don't jeopardize your
-                  future, take advantage of Vant retirement planning savings to
-                  ensure and secure your future. Its important to ensure you
-                  have done everything you can to cater for your future
-                  self starting now.
+                  
                 </p>
               </div>
             </div>
