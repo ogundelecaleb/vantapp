@@ -582,13 +582,9 @@ const Home = () => {
               </div>{" "}
               <div>
                 <p>
-                  Vant is launching its mini-health plans. In partnership with
-                  various health insurance comapnies, we are doing a test pilot
-                  of the product.
-                  <br />
-                  <br />
-                  Checkout the plans, purchase a plan. You can get as low as
-                  N650/month to cover your health.
+                  Vant is launching its save to buy allowing you to seamlessly
+                  and conveniently save to buy variety products you so desire.
+                  You are in control, pick a product save for it and it's yours.
                 </p>
               </div>
             </div>
@@ -651,10 +647,16 @@ const Home = () => {
             and latest from Vant...
           </p>
           <div className="w-full flex">
-            <Link to="https://whatsapp.com/channel/0029Va9b2AGEwEk3nxKcCf1y" target="_blank" rel="noreferrer">
-            <button className="px-[18px] md:px-[38px] py-[8px] lg:py-[18px] text-white rounded-[40px] bg-[#3B6896] mx-auto hover:bg-[#3b6896d2]">
-              Join Now
-            </button></Link>
+            <Link
+              to="https://whatsapp.com/channel/0029Va9b2AGEwEk3nxKcCf1y"
+              target="_blank"
+              rel="noreferrer"
+              className="mx-auto"
+            >
+              <button className="px-[18px] md:px-[38px] py-[8px] lg:py-[18px] text-white rounded-[40px] bg-[#3B6896]  hover:bg-[#3b6896d2]">
+                Join Now
+              </button>
+            </Link>
           </div>
           <img
             src="./image/OneEyed.png"

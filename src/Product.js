@@ -37,7 +37,7 @@ const Product = () => {
                 className="h-[20px] md:h-full"
               />
             </li>
-           
+
             <li>
               <img
                 src="./image/vfd.png"
@@ -91,19 +91,18 @@ const Product = () => {
               animateIn="animate__fadeInUp"
               duration={1}
             > */}
-              <h3 className="text-[18px] md:text-[24px] mb-[20px] ">
-                Deluxe investment Plan
-              </h3>{" "}
+            <h3 className="text-[18px] md:text-[24px] mb-[20px] ">
+              Deluxe investment Plan
+            </h3>{" "}
             {/* </ScrollAnimation> */}
             {/* <ScrollAnimation
               animateIn="animate__fadeInUp"
               duration={1}
             > */}
-              <p className="text-[#5F5F60]">
-                With the deluxe plan, you can earn up to 5% P.A with a minimum
-                of 1 unit. You will have access to make withdrawals after 1
-                month.
-              </p>
+            <p className="text-[#5F5F60]">
+              With the deluxe plan, you can earn up to 5% P.A with a minimum of
+              1 unit. You will have access to make withdrawals after 1 month.
+            </p>
             {/* </ScrollAnimation> */}
           </div>
           <div className="w-full md:w-[50%]">
@@ -118,18 +117,18 @@ const Product = () => {
               animateIn="animate__fadeInUp"
               duration={1}
             > */}
-              <h3 className="text-[18px] md:text-[24px] mb-[20px] ">
-                Grow investment Plan{" "}
-              </h3>
+            <h3 className="text-[18px] md:text-[24px] mb-[20px] ">
+              Grow investment Plan{" "}
+            </h3>
             {/* </ScrollAnimation> */}
             {/* <ScrollAnimation
               animateIn="animate__fadeInUp"
               duration={1}
             > */}
-              <p className="text-[#5F5F60]">
-                With the grow plan, you can earn up to 10% P.A with a minimum of
-                3 unit. You will have access to make withdrawals after 3 months.
-              </p>
+            <p className="text-[#5F5F60]">
+              With the grow plan, you can earn up to 10% P.A with a minimum of 3
+              unit. You will have access to make withdrawals after 3 months.
+            </p>
             {/* </ScrollAnimation> */}
           </div>
         </div>
@@ -146,19 +145,18 @@ const Product = () => {
               animateIn="animate__fadeInUp"
               duration={1}
             > */}
-              <h3 className="text-[18px] md:text-[24px] mb-[20px] ">
-                Surge investment Plan{" "}
-              </h3>
+            <h3 className="text-[18px] md:text-[24px] mb-[20px] ">
+              Surge investment Plan{" "}
+            </h3>
             {/* </ScrollAnimation> */}
             {/* <ScrollAnimation
               animateIn="animate__fadeInUp"
               duration={1}
             > */}
-              <p className="text-[#5F5F60]">
-                With the surge plan, you can earn up to 13% P.A with a minimum
-                of 5 unit. You will have access to make withdrawals after 6
-                months.
-              </p>
+            <p className="text-[#5F5F60]">
+              With the surge plan, you can earn up to 13% P.A with a minimum of
+              5 unit. You will have access to make withdrawals after 6 months.
+            </p>
             {/* </ScrollAnimation> */}
           </div>
           <div className="w-full md:w-[50%]">
@@ -173,26 +171,25 @@ const Product = () => {
               animateIn="animate__fadeInUp"
               duration={1}
             > */}
-              <h3 className="text-[18px] md:text-[24px] mb-[20px] ">
-                HNI investment Plan
-              </h3>
+            <h3 className="text-[18px] md:text-[24px] mb-[20px] ">
+              HNI investment Plan
+            </h3>
             {/* </ScrollAnimation> */}
             {/* <ScrollAnimation
               animateIn="animate__fadeInUp"
               duration={1}
             > */}
-              <p className="text-[#5F5F60]">
-                With the HNI investment plan, you can customize the plan to suit
-                your finances with risk appetite most convenient to you. Sounds
-                cool, right?
-              </p>
+            <p className="text-[#5F5F60]">
+              With the HNI investment plan, you can customize the plan to suit
+              your finances with risk appetite most convenient to you. Sounds
+              cool, right?
+            </p>
             {/* </ScrollAnimation> */}
           </div>
         </div>
       </section>
       <section className="px-[16px] md:px-[60px] md:gap-4 lg:px-[120px] py-[24px] flex items-center flex-col md:flex-row mb-[60px] md:mb-[100px] lg:mb-[120px]">
         <div className="w-full md:w-[50%] bg-[#f9f9f9] pt-[80px] rounded-tl-[16px] rounded-tr-[16px]">
-         
           <img
             src="/image/payoffdebt.png"
             alt=""
@@ -201,30 +198,27 @@ const Product = () => {
         </div>
 
         <div className="w-full md:w-[50%] md:pl-[20px] lg:pl-[40px]">
-         
           <div>
-            
-              <p className="text-[#3B6896] animate__fadeInUp  animate__animated animate__slow font-semibold ">
-                VANT PAY OFF DEBTS
-              </p>{" "}
-              <img src="./image/moneybag.png" alt="" />
-           
+            <p className="text-[#3B6896] animate__fadeInUp  animate__animated animate__slow font-semibold ">
+              VANT PAY OFF DEBTS
+            </p>{" "}
+            <img src="./image/moneybag.png" alt="" />
           </div>
           {/* <ScrollAnimation
             animateIn="animate__fadeInUp"
             // animateOut="animate__fadeOutRight"
             duration={1}
           > */}
-            <h2 className="   animate__animated animate__slow animate__fadeInUp text-[20px] md:text-[28px] lg:text-[35px] md:mb-[28px] mb-[16px] tracking-tighter font-medium">
-              Improve your financial welfare by saving to clear off debts.{" "}
-            </h2>
+          <h2 className="   animate__animated animate__slow animate__fadeInUp text-[20px] md:text-[28px] lg:text-[35px] md:mb-[28px] mb-[16px] tracking-tighter font-medium">
+            Improve your financial welfare by saving to clear off debts.{" "}
+          </h2>
           {/* </ScrollAnimation> */}
           {/* <ScrollAnimation animateIn="animate__fadeInUp" duration={1}> */}
-            <p className="text-[16px] md:text-[18px]  md:mb-[28px] mb-[16px]">
-              This feature promotes a long-term financial health. By reducing
-              debts and building savings simultaneously, individuals can achieve
-              a more secure and stable financial future.
-            </p>
+          <p className="text-[16px] md:text-[18px]  md:mb-[28px] mb-[16px]">
+            This feature promotes a long-term financial health. By reducing
+            debts and building savings simultaneously, individuals can achieve a
+            more secure and stable financial future.
+          </p>
           {/* </ScrollAnimation> */}
           <ul className="hidden md:flex flex-col gap-[16px] md:gap-[32px] md:mb-[28px] mb-[16px]">
             <li className="flex items-center gap-3 text-[#5F5F60]">
@@ -248,7 +242,8 @@ const Product = () => {
       </section>
       <section className="px-[16px] md:px-[60px]  lg:px-[110px] mb-[60px] md:mb-[80px] lg:mb-[120px]">
         <h3 className="text-[20px] md:text-[28px] lg:text-[40px] mb-[16px] font-medium text-center  mx-auto md:mb-[32px] lg:mb-[64px] ">
-          Future Investment opportunities on <span className="text-[#3B6896]">Vant</span>{" "}
+          Future Investment opportunities on{" "}
+          <span className="text-[#3B6896]">Vant</span>{" "}
         </h3>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3  gap-[23px]">
           <div className="w-full md:max-w-[385px] rounded-[16px]">
@@ -268,11 +263,17 @@ const Product = () => {
               </div>{" "}
               <div>
                 <p className=" text-[14px] text-[#5F5F60]">
-                  Vant is launching its mini-health plans. In partnership with
-                  various health insurance comapnies, we are doing a test pilot
-                  of the product.
-                  <br /> <br /> Checkout the plans, purchase a plan. You can get
-                  as low as N650/month to cover your health. Visit here
+                  Vant is launching its Vant retirement planning savings. Not
+                  all workplaces provide you with retirement planning and
+                  benefits, and you shouldn't deny your future the benefits of a
+                  healthy, and comfortable financial stability in your mid or
+                  golden years.
+                  <br /> <br />
+                  As a freelancer or business owner don't jeopardize your
+                  future, take advantage of Vant retirement planning savings to
+                  ensure and secure your future. Its important to ensure you
+                  have done everything you can to cater for your future
+                  self starting now.
                 </p>
               </div>
             </div>
@@ -323,13 +324,9 @@ const Product = () => {
               </div>{" "}
               <div>
                 <p className=" text-[14px] text-[#5F5F60]">
-                  Vant is launching its mini-health plans. In partnership with
-                  various health insurance comapnies, we are doing a test pilot
-                  of the product.
-                  <br />
-                  <br />
-                  Checkout the plans, purchase a plan. You can get as low as
-                  N650/month to cover your health.
+                  Vant is launching its save to buy allowing you to seamlessly
+                  and conveniently save to buy variety products you so desire.
+                  You are in control, pick a product save for it and it's yours.
                 </p>
               </div>
             </div>
@@ -351,13 +348,10 @@ const Product = () => {
               </div>{" "}
               <div>
                 <p className=" text-[14px] text-[#5F5F60]">
-                  Vant is launching its mini-health plans. In partnership with
-                  various health insurance comapnies, we are doing a test pilot
-                  of the product.
-                  <br />
-                  <br />
-                  Checkout the plans, purchase a plan. You can get as low as
-                  N650/month to cover your health.
+                  Vant is launching its coop range of service offerings,
+                  bringing flexibility, ease, and speed to cooperatives. Save
+                  better, faster and easier, disburse loans quicker and recovery
+                  debts more effortlessly
                 </p>
               </div>
             </div>
@@ -379,13 +373,9 @@ const Product = () => {
               </div>{" "}
               <div>
                 <p className=" text-[14px] text-[#5F5F60]">
-                  Vant is launching its mini-health plans. In partnership with
-                  various health insurance comapnies, we are doing a test pilot
-                  of the product.
-                  <br />
-                  <br />
-                  Checkout the plans, purchase a plan. You can get as low as
-                  N650/month to cover your health.
+                  Vant is launching its business products catering to small and
+                  micro businesses.Vant empowers businesses to sell, collect,
+                  manage day to day operations a lot more effortless.
                 </p>
               </div>
             </div>
@@ -407,13 +397,10 @@ const Product = () => {
               </div>{" "}
               <div>
                 <p className=" text-[14px] text-[#5F5F60]">
-                  Vant is launching its mini-health plans. In partnership with
-                  various health insurance comapnies, we are doing a test pilot
-                  of the product.
-                  <br />
-                  <br />
-                  Checkout the plans, purchase a plan. You can get as low as
-                  N650/month to cover your health.
+                  Vant is launching its cards for local and international
+                  payments. Empower your dreams with a card that never fails you
+                  at your crucial and essential moments. Vant card to your
+                  access to the world.
                 </p>
               </div>
             </div>

@@ -12,7 +12,11 @@ const Company = () => {
           Financial Technological solutions.{" "}
         </h2>
 
-        <img src="./image/companycartoon.jpg" alt="cartoon" className="mx-auto" />
+        <img
+          src="./image/companycartoon.jpg"
+          alt="cartoon"
+          className="mx-auto"
+        />
       </section>
       <section className="px-[16px] md:px-[60px]  lg:px-[120px] py-[24px] grid grid-cols-1 md:grid-cols-2 gap-[40px] md:gap-5 mb-[60px] md:mb-[100px] lg:mb-[120px]">
         <div className="w-full ">
@@ -21,16 +25,16 @@ const Company = () => {
           </h2>
           <ul className="flex flex-col gap-1">
             <li>
-              1. To bring about an sustainable digital financial building
-              capabilities to every African.
+              1. To bring about a sustainable digital financial building
+              capability to every African.
             </li>
             <li>
               2. To reduce market frictions limiting scale of financial
-              inclusions for nano and small businesses across Africa.
+              inclusions for micro and small businesses across Africa.
             </li>
             <li>
               3. To create an efficient system built for the African market
-              reducing inefficiencies in the trade and financial ecosystem.
+              reducing, inefficiencies in the trade and financial ecosystem.
             </li>
           </ul>
         </div>
@@ -50,18 +54,10 @@ const Company = () => {
             Brand Values
           </h2>
           <ul className="flex flex-col gap-1">
-            <li>
-              1. To bring about an sustainable digital financial building
-              capabilities to every African.
-            </li>
-            <li>
-              2. To reduce market frictions limiting scale of financial
-              inclusions for nano and small businesses across Africa.
-            </li>
-            <li>
-              3. To create an efficient system built for the African market
-              reducing inefficiencies in the trade and financial ecosystem.
-            </li>
+            <li>1. Integrity.</li>
+            <li>2. Transparency.</li>
+            <li>3. Continuous Innovation.</li>
+            <li>4. Customer Centric.</li>
           </ul>
         </div>
       </section>
@@ -157,7 +153,9 @@ const Company = () => {
           {" "}
           <div>
             <img src="./image/Rockclimber.png" alt="equalizer" />
-            <h3 className="text-[18px] md:text-[20px] lg:text-[24px] md:mb-[28px] mb-[16px] font-medium">Empower Individuals</h3>
+            <h3 className="text-[18px] md:text-[20px] lg:text-[24px] md:mb-[28px] mb-[16px] font-medium">
+              Empower Individuals
+            </h3>
             <p>
               We strive to empower individuals to take control of their
               financial futures, offering personalized guidance, reliable
@@ -237,7 +235,7 @@ const Company = () => {
         <img
           src="./image/companycartoon1.png"
           alt="cartoon"
-          className="animate-bounce delay-700 duration-400 transform transition-all mx-auto"
+          className=" duration-400 transform transition-all mx-auto"
         />
       </section>
       <section className="px-[16px] md:px-[60px]  lg:px-[120px] mb-[60px] md:mb-[80px] lg:mb-[120px]">
